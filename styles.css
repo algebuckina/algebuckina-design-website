@@ -11,7 +11,6 @@ body #content {
     padding: 0px 0px 0px 0px;
 }
 
-
 /* HEADER */
 
 .header-inner {
@@ -100,6 +99,24 @@ body {
 
 @media only screen and (min-width: 992px) {
     /* DESKTOP MODE CONTENT */
+    .category{
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .topic{
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .categories.row.display-animation{
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .added {
         padding-left: 15%;
         padding-right: 15%;
