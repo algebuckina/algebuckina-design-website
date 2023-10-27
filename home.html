@@ -1,11 +1,5 @@
-<div class="slideshow">
-    <img class="mySlides" src="/assets/uploads/files/1673670347653-testrender4.jpg">
-    <img class="mySlides" src="/assets/uploads/files/1673670096697-adrs2023.jpg">
-    <img class="mySlides" src="/assets/uploads/files/1673673986595-vr.jpg">
-</div>
-<img src="/assets/uploads/files/1666497396624-white.png" style="width:100%">
-
 <div class="added">
+    <img src="/assets/uploads/files/1673673986595-vr.jpg">
     <br><br>
     <h4>This website is a work in progress, There are a lot of empty pages that still need to be coded. Please sit tight
         and contact us if you need any more information.</h4>
@@ -60,23 +54,4 @@
             </a>
         </div>
     </div>
-
-    <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.opacity = "0";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.opacity = "1";
-            setTimeout(carousel, 10000); // Change image every 10 seconds
-        }
-    </script>
 </div>
