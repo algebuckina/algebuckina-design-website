@@ -29,7 +29,7 @@ en: &DEFAULT_EN
         icon: fas fa-cube
       - title: "Virtual Reality"
         desc: "We offer customers the ability to turn their events and showrooms into a VR experience"
-        icon: fab fa-vr-cardboard
+        icon: fas fa-vr-cardboard
 
   portfolio:
     title: "Projects and Products"
