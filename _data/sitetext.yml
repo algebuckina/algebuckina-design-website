@@ -105,7 +105,7 @@ en: &DEFAULT_EN
           - url: https://instagram.com/b98turner
             icon: fab fa-instagram
           - url: https://algebuckina.github.io/portfolio/index.html
-            icon: fab window-maximize
+            icon: fas window-maximize
           - url: https://au.linkedin.com/in/b98turner
             icon: fab fa-linkedin-in
       - name: "Brendan Huckle"
@@ -115,7 +115,7 @@ en: &DEFAULT_EN
           - url: https://instagram.com/
             icon: fab fa-instagram
           - url: 
-            icon: fab window-maximize
+            icon: fas window-maximize
           - url: https://au.linkedin.com/in/
             icon: fab fa-linkedin-in
       - name: "Aqeel Khan"
@@ -125,7 +125,7 @@ en: &DEFAULT_EN
           - url: https://www.instagram.com/abigmess_ofcurlyhair/
             icon: fab fa-instagram
           - url: https://afkdesign.myportfolio.com/
-            icon: fab window-maximize
+            icon: fas window-maximize
           - url: https://au.linkedin.com/in/
             icon: fab fa-linkedin-in
 
