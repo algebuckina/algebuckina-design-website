@@ -11,29 +11,29 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Algebuckina Design
-    text: Focusing on sustainability in design
+    title: 
+    text: Algebuckina Design
     button: Tell Me More
     buttonlink: "#services"
 
   services:
     title: "Services"
-    text: "Lorem ipsum"
+    text: "What we do"
     section: services
     list:
       - title: "Software"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+        desc: "We develop software, and we make sure it's all open source so the community can use and improve it for free"
+        icon: fas fa-code #find more at https://fontawesome.com/icons
       - title: "Design and Manufacturing"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
+        desc: "We design and manufacture sustainable products with an emphasis on long jevidy and support"
+        icon: fas fa-cube
       - title: "Virtual Reality"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+        desc: "We offer customers the ability to turn their events and showrooms into a VR experience"
+        icon: fab fa-vr-cardboard
 
   portfolio:
     title: "Projects and Products"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: "Past projects and products we have worked on and released"
     section: portfolio
     closebutton: "Close Project"
 
@@ -44,8 +44,8 @@ en: &DEFAULT_EN
     # left is the default
     #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
+      - title: "Company Founded"
+        year: "November 2021"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/1.jpg
         alt:
