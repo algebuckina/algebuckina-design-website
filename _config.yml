@@ -19,13 +19,13 @@ baseurl: "/algebuckina-design-website" # the subpath of your site, e.g. /blog
 
 title      : Algebuckina Design
 email      : algebuckina-design@icloud.com #this is also the email contact forms will go to
-description: "Agency Bootstrap theme converted to a Jekyll theme, plus new features: Google Analytics, Markdown support, custom pages, and more!"
-author     : Your Name
+description: "Algebuckina Design is a small design and manufacturing company from Western Sydney. Founded by Bradley Turner in 2021, it aims to bring sustainability to the consumer technology peripheral market."
+author     : Bradley Turner
 # logo:     #optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
-locale: "en-US" # See available languages in _data/sitetext.yml
+locale: "en-AU" # See available languages in _data/sitetext.yml
 
 analytics:
   google: #Google Analytics tracking code here
