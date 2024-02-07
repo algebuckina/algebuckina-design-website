@@ -46,27 +46,25 @@ en: &DEFAULT_EN
     events:
       - title: "Company Founded"
         year: "November 2021"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        desc: "Bradley Turner Founded Algebuckina Design in 2021 after he graduated university with a honours degree in industrial design. He wanted an outlet for his drive and creativity that he could find in regular jobs in the industry."
         image: assets/img/timeline/1.jpg
         alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      - title: "St Matthew's Uniting Church Website"
+        year: "January 2022"
+        desc: "St Matthew's Uniting Church was in need of a new website as theirs hadn't been updated since the mid 2000s and had little to no functionality, we worked with them to create a new forum and website based on Nodebb which we still support to this day."
         image: assets/img/timeline/2.jpg
         alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+      - title: "Star Wars Galaxies Mod Manager"
+        year: "March 2023"
+        desc: "SWGEmu was in need of a mod manager as the growing selection of mods released for the game were beginning to overlap, we wrote a tool from scratch to assist with organising users mods, and it granted Bradley a position with the SWGEmu Staff."
         image: assets/img/timeline/3.jpg
         alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
+#      - title: "1st product release"
+#        year: "June 2024"
+#        desc: "Your description here,"
+#        image: assets/img/timeline/4.jpg
+#        alt:
+#    end: "Be Part <br> of Our <br> Story!"
 
   about:
     title: "About Us"
@@ -95,7 +93,7 @@ en: &DEFAULT_EN
   team:
     title: "Our Team"
     text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    subtext: We are a couple of industrial design graduates who love design and a challenge.
     section: team
     people:
       - name: "Bradley Turner"
