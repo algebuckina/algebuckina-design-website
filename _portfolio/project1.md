@@ -20,6 +20,8 @@ Before diving into making a keyboard completely from scratch, I wanted to see wh
 
 ![1st keyboard build](/portfolio/assets/images/topics/content/keyboard2.jpg)
 
+<img src="/portfolio/assets/images/topics/content/keyboard2.jpg" alt="Wood Keyboard" width="100%"/>
+
 This experience did show me a few things:
 * Don't use alps style switches, the keycap set was really hard to come by
 * I'd need to create internal documentation for the firmware flashing process or maybe even automate it
