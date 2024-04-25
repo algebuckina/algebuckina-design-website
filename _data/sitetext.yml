@@ -39,7 +39,7 @@ en: &DEFAULT_EN
 
   timeline:
     title: "Timeline"
-    text: "Lorem ipsum timeline"
+    text: ""
     section: timeline
     # left is the default
     #start_align: "left"
@@ -92,7 +92,7 @@ en: &DEFAULT_EN
 
   team:
     title: "Our Team"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: ""
     subtext: We are a couple of industrial design graduates who love design and a challenge.
     section: team
     people:
@@ -129,7 +129,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    text: "Text or call +61 498 865 681"
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."

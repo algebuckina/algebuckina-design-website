@@ -18,7 +18,7 @@ url    : "" # the base hostname & protocol for your site, e.g. http://example.co
 baseurl: "/algebuckina-design-website" # the subpath of your site, e.g. /blog
 
 title      : Algebuckina Design
-email      : algebuckina-design@icloud.com #this is also the email contact forms will go to
+email      : bradley.t@algebuckina-design.au #this is also the email contact forms will go to
 description: "Algebuckina Design is a small design and manufacturing company from Western Sydney. Founded by Bradley Turner in 2021, it aims to bring sustainability to the consumer technology peripheral market."
 author     : Bradley Turner
 # logo:     #optional, defaults to site title
@@ -27,8 +27,8 @@ author     : Bradley Turner
 
 locale: "en-AU" # See available languages in _data/sitetext.yml
 
-analytics:
-  google: #Google Analytics tracking code here
+#analytics:
+#  google: #Google Analytics tracking code here
 
 collections:
   portfolio:
