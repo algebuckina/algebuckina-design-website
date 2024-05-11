@@ -21,8 +21,8 @@ en: &DEFAULT_EN
       section: timeline
     - title: "Team"
       section: team
-    - title: "Contact"
-      section: contact
+#    - title: "Contact"
+#      section: contact
     - title: "Website Source"
       url: https://github.com/algebuckina/algebuckina-design-website
 en-US:

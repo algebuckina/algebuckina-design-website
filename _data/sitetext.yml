@@ -132,10 +132,9 @@ en: &DEFAULT_EN
           - url: https://au.linkedin.com/in/
             icon: fab fa-linkedin-in
 
-  contact:
-    title: "Contact Us"
-    text: "Text or call +61 498 865 681"
-    text: "Email at bradley.t@algebuckina-design.au"
+#  contact:
+#    title: "Contact Us"
+#    text: "Text or call +61 498 865 681"
 #    section: contact
 #    name: "Name*"
 #    name-validation: "Please enter your name."
