@@ -18,44 +18,43 @@ The Keyboard can be purchased assembled, unnassembled or a barebones kit that le
 
 ## What's in the box
 ### Assembled
-- 1x Wood Mechanical Keyboard v0.1
-- 1x Braided USB-C to USB-C cable
-- 1x USB-C to USB-A converter
-- 1x Apple Keycaps
+1x Wood Mechanical Keyboard v0.1\
+1x Braided USB-C to USB-C cable\
+1x USB-C to USB-A converter\
+1x Apple Keycaps
 ### Unnassembled
-- 1x Wood Mechanical Keyboard v0.1 top case/plate
-- 1x Wood Mechanical Keyboard v0.1 bottom case
-- 1x Wood Mechanical Keyboard v0.1 PCB
-- 70x ANSI layout keycaps (extra Apple ones)
-- 70x Cherry MX Red Keyswitches (3 spare)
-- 1x Stabilizer set
-- 10x fastening screws
-- 1x Braided USB-C to USB-C cable
-- 1x USB-C to USB-A converter
+1x Wood Mechanical Keyboard v0.1 top case/plate\
+1x Wood Mechanical Keyboard v0.1 bottom case\
+1x Wood Mechanical Keyboard v0.1 PCB\
+70x ANSI layout keycaps (extra Apple ones)\
+70x Cherry MX Red Keyswitches (3 spare)\
+1x Stabilizer set\
+10x fastening screws\
+1x Braided USB-C to USB-C cable\
+1x USB-C to USB-A converter
 ### Barebones
-- 1x Wood Mechanical Keyboard v0.1 top case/plate
-- 1x Wood Mechanical Keyboard v0.1 bottom case
-- 1x Wood Mechanical Keyboard v0.1 PCB
+1x Wood Mechanical Keyboard v0.1 top case/plate\
+1x Wood Mechanical Keyboard v0.1 bottom case\
+1x Wood Mechanical Keyboard v0.1 PCB
 ## Tech Specs
 ### Size and weight (assembled)
-- Height: 000 mm
-- Width: 000 mm
-- Depth: 000 mm
-- Weight: 000 g 
+Height: 000 mm\
+Width: 000 mm\
+Depth: 000 mm\
+Weight: 000 g 
 ### Minimum requirements (tested)
-- Mac OS 10.0.1
-- Windows 7
-- Linux Kernel 15.0
-- Android 10
-- iOS 13
+Mac OS 10.0.1\
+Windows 7\
+Linux Kernel 15.0\
+Android 10\
+iOS 13
 
 ## Custom Kits
 If you'd like to personalise your keyboard, we've got you covered. Our design team is on hand to create a new keyboard design from scratch, based on our PCB and machinery. For an extra cost, we can also make a custom PCB to accommodate differnt switch types (not layouts).
 
 ### What we can change
-- Plate wood type and style
-- Case wood type and style
-- Keycap wood type, style and print
-- Keyswitch type and style
+Plate & case wood type and style\
+Keycap wood type, style and print\
+Keyswitch type and style
 
 Please note, all custom requests come assembled to ensure all components fit together. Also note, due to the complexity of some orders, we may request a design fee BEFORE we start working on your requests. 

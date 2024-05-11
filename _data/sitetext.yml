@@ -48,21 +48,22 @@ en: &DEFAULT_EN
         year: "November 2021"
         desc: "Bradley Turner Founded Algebuckina Design in 2021 after he graduated university as an outlet for his drive for design and sustainability."
         image: assets/img/timeline/1.jpg
-        alt:
+        alt: Logo
       - title: "St Matthew's Uniting Church Website"
         year: "January 2022"
         desc: "St Matthew's Uniting Church launched their new website."
         image: assets/img/timeline/2.jpg
-        alt: assets/img/timeline/4.jpg
+        alt: St Matts Website
       - title: "ADRS Begins"
         year: "February 2023"
         desc: "The Algebuckina Design Racing Series was formed."
-        image: 
+        image: assets/img/timeline/3.jpg
+        alt: ADRS
       - title: "SWGEmu Mod Manager"
         year: "March 2023"
         desc: "The Star Wars Galaxies Emulator Mod Manager officially released."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
+        image: assets/img/timeline/4.jpg
+        alt: Mod Manager
 #      - title: "1st product release"
 #        year: "June 2024"
 #        desc: "Your description here,"
