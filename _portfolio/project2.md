@@ -1,18 +1,12 @@
 ---
-title: The Open Head Unit
-subtitle: A car head unit you can build yourself
+title: ADRS
+subtitle: The Algebuckina Design Racing Series
 image: assets/img/portfolio/02-full.jpg
-alt: Head Unit Prototype
+alt: ADRS cars
 
 caption:
-  title: Open Head Unit
-  subtitle: Bringing open tech to your car
+  title: Algebuckina Design Racing Series
+  subtitle: A fun, comminuty driven virtual racing series
   thumbnail: assets/img/portfolio/02-thumbnail.jpg
 ---
 Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-
-{:.list-inline}
-- Date: January 2017
-- Client: Explore
-- Category: Graphic Design
-
