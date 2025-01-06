@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebuckina Design</title>
+    <meta name="description" content="ALGEBUCKINA">
+    <meta name="keywords" content="ALGEBUCKINA">
+    <meta name="author" content="Bradley Turner">
+    <meta property="og:image" content="./favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shotcut icon" type="image/ico" href="./favicon.ico">
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerTitle">
+            <div class="headerLogo">
+                <img src="images/logo.jpeg">
+            </div>
+            <div class="headerMain">
+                <p id="current-date"></p>
+                <h1>Algebuckina Design</h1>
+                <h4>Environmentally Conscious Design</h4>
+            </div>
+            <div class="headerLinks">
+                <p><a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a></p>
+                <p><a href="https://github.com/algebuckina">GITHUB</a></p>
+            </div>
+        </div>
+
+
+        <nav>
+            <div class="navButtons"><a href="./index.html">HOME</a></div>
+            <div class="navButtons"><a href="./products-services.html">PRODUCTS & SERVICES</a></div>
+            <div class="navButtons"><a href="./community.html">COMMUNITY</a></div>
+            <div class="navButtons"><a href="./contact.html">CONTACT</a></div>
+        </nav>
+    </header>
+
+    <div class="nav2Container">
+        <div class="nav2">
+            <a href="#par1" id="pr1">
+                Products
+            </a>
+            <a href="#par2" id="pr2">
+                Services
+            </a>
+            <a href="#par3" id="pr3">
+                Projects
+            </a>
+            <a href="#par4" id="pr4">
+                Links
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <md-block id="par1">
+            # Products
+
+        </md-block>
+
+        <md-block id="par2">
+            # Services
+
+            ## CAD Services
+
+            We offer a range of CAD services to help you bring your designs to life.
+
+            - Reverse Engineering
+            - Schematics to 3D
+            - CAD file conversion
+            - Tech Drawing
+
+            ## Protoyping Services
+
+            We provide rapid prototyping and small-scale production run services to help you test and refine your
+            designs.
+
+            - 3D printing
+            - CNC routing
+            - Microcontroller-based Prototyping
+            - Small-scale production runs
+
+            ## Render Services
+
+            We create high-quality renders to help you visualize and showcase your products and environments.
+            
+            - Product Rendering
+            - Contextual Rendering
+            - Interior spaces
+            - Lighting Visualistion
+
+            ## Interaction Services
+
+            We create immersive and interactive experiences to help you engage with your customers and stakeholders to
+            showcase your products.
+
+            - Interactive 3D experiences
+            - Virtual environment creation
+            - Virtual product demonstrations
+            - Immersive Reality Solutions
+
+
+        </md-block>
+
+        <md-block id="par3">
+            # Projects
+        </md-block>
+
+        <md-block id="par4" class="middleme">
+            # Links
+
+            ![The San Juan Mountains are beautiful!](images/logo.jpeg "Algebuckina Design Logo")
+
+            # Algebuckina Design
+
+            ## [Website](www.algebuckina-design.au)
+
+            ## [Contact Us](./contact-us)
+
+            ## [Github](https://github.com/algebuckina)
+
+            ## [Instagram](https://www.instagram.com/algebuckina/)
+
+            ## [Linkedin](https://www.linkedin.com/company/algebuckina-design/)
+
+            ## [Twitch](https://www.twitch.tv/algebuckina_design)
+
+            ## [Twitter](https://twitter.com/algebuckina)
+
+            ## [Youtube](https://www.youtube.com/channel/UCp-P5ys675ju4mfHJCrfGfw)
+
+        </md-block>
+
+        <md-block>
+            ©2024 Algebuckina Design PTY LTD
+        </md-block>
+
+        <footer>
+            <br>
+        </footer>
+    </main>
+
+    <script>
+
+        // This is the code that finds the top id called "par#" which is the paragraphs in the main div. It then uses that info to change the colour of the nav2 element
+        function findTopElement() {
+            // Select all elements in the document that have an ID attribute
+            const elements = document.querySelectorAll('[id]');
+
+            // Initialize variables to keep track of the topmost element and its position
+            let topElement = null;
+            let minTop = Infinity;
+
+            // Iterate over each element with an ID
+            elements.forEach(el => {
+                // Check if the element's ID contains the substring 'par'
+                if (el.id.includes('par')) {
+                    // Get the position of the element relative to the viewport
+                    const rect = el.getBoundingClientRect();
+
+                    // Check if this element is within the viewport and closer to the top than the current topmost element
+                    if (rect.top >= 0 && rect.top < minTop) {
+                        // Update the minimum top position
+                        minTop = rect.top;
+                        // Update the topmost element
+                        topElement = el;
+                    }
+                }
+            });
+
+            // removes the a from par# to turn it into pr# which refers to the ID of the nav2 items
+            let topEl = topElement.id;
+            let newTopEl = topEl.replace(/a/g, '');
+
+            // changes all the pr# ID's to light gray before the top on on the user space is changed to active
+            //need to change 9 to how many (pr#) ID's there are
+            for (let i = 1; i <= 9; i++) {
+                let element = document.getElementById(`pr${i}`);
+                if (element) {
+                    element.style.color = "lightgray";
+                    element.style.borderLeftColor = "lightgray";
+                }
+            }
+
+            // changes the colour of the active navbar2 ID
+            document.getElementById(newTopEl).style["color"] = "#231f20";
+            document.getElementById(newTopEl).style["border-left-color"] = "#231f20";
+        }
+
+        // runs the find top element function every time the user scrolls
+        window.addEventListener('scroll', findTopElement);
+    </script>
+
+    <script>
+        function formatDate(date) {
+            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+            return date.toLocaleDateString('en-GB', options);
+        }
+
+        const currentDate = new Date();
+        document.getElementById('current-date').innerText = formatDate(currentDate);
+    </script>
+</body>
+
+
+</html>
