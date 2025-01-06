@@ -1,7 +1,7 @@
-# Algebuckina Design Website based on Github Pages Jekyll
+# Algebuckina Design Website based written by hand with html, css and js
 
-https://algebuckina.github.io/algebuckina-design-website/
+This is the beta site for algebuckina design which. The old website is currently hosted at https://algebuckina-design.au
 
-This is the newwst version of Algebuckina Design's Website. We have chosen to move away from self hosting due to network and server downtime and move to a free and open front page approach to promoting our business.
+This beta site can be viewed at https://algebuckina.github.io/algebuckina-design-website/
 
-We will be working our forums at a later date, which will be hosted at formums.algebuckina-design.au (I'll add the link when it's up) and have a much simpler front end.
+It's style tries to emulate looking at an old newspaper.
