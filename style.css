@@ -1,0 +1,133 @@
+@font-face {
+    font-family: CMUNVT;
+    src: url(fonts/cmunvt.ttf);
+}
+
+body {
+    font-family: CMUNVT, monospace, sans-serif;
+    background: #fffcf9 url(images/ricepaper2.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.middleme {
+    text-align: center;
+}
+
+/*--HEADER--*/
+
+.headerTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headerLogo {
+    width: 20%;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.headerLogo img {
+    max-width: 100%;
+    max-height: 130px;
+    height: auto;
+}
+
+.headerMain {
+    width: 60%;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.headerLinks {
+    width: 20%;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.headerLinks a {
+    text-decoration: none;
+}
+
+/*--NAVIGATION--*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.navButtons {
+    width: 25%;
+    padding: 10px;
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+    font-weight: bold;
+}
+
+/*--MAIN BODY & INFO--*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+md-block {
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+    /*width: calc(75% - 40px);*/
+    padding: 20px;
+}
+
+/*--SCROLLING NAV BAR--*/
+
+.nav2 {
+    width: 200px;
+    padding-left: 25px;
+    position: sticky;
+    overflow: hidden;
+    top: 125px;
+    padding-top: 30px;
+}
+
+.nav2Container {
+    height: 2602px;
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+    float: right;
+    margin-right: 20px;
+}
+
+.nav2 a {
+    border-left-color: lightgray;
+    color: lightgray;
+    border-left: 4px solid;
+    padding-left: 8px;
+    display: block;
+    unicode-bidi: isolate;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav2 a:hover {
+    color: black;
+    border-left-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
