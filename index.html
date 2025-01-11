@@ -239,6 +239,17 @@
 
         // runs the find top element function every time the user scrolls
         window.addEventListener('scroll', findTopElement);
+
+        // this makes sure the side nav bar is the same height as all the main content.
+        const mainElement = document.querySelector('main');
+        const nav2ContainerElement = document.querySelector('.nav2Container');
+
+        function updateNavHeight() {
+            nav2ContainerElement.style.height = mainElement.offsetHeight + 'px';
+        }
+
+        mainElement.addEventListener('DOMSubtreeModified', updateNavHeight);
+
     </script>
 
     <script>

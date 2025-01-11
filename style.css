@@ -125,7 +125,7 @@ md-block:hover {
 }
 
 .nav2Container {
-    height: 100vh;
+    height: 500px;
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     float: right;
     margin-right: 20px;
