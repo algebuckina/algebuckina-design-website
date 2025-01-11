@@ -93,18 +93,9 @@ md-block {
     transition: 0.5s;
 }
 
-a md-block:hover {
-    color: blue;
+md-block:hover {
     filter: saturate(100%);
     transition: 0.5s;
-}
-
-img {
-    filter: saturate(0%);
-}
-
-img:hover {
-    filter: saturate(100%);
 }
 
 .product {
