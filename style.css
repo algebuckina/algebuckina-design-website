@@ -91,17 +91,19 @@ md-block {
     /*width: calc(75% - 40px);*/
     padding: 20px;
     filter: saturate(0%);
+    transition: 0.5s;
 }
 
 md-block:hover {
     color: blue;
     filter: saturate(100%);
+    transition: 0.5s;
 }
 
 .product {
     width: calc(100%/3);
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-
+    padding: 20px;
 }
 
 /*--SCROLLING NAV BAR--*/
