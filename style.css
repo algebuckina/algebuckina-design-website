@@ -111,6 +111,7 @@ img:hover {
     content: "";
     display: table;
     clear: both;
+    display: block;
 }
 
 .product {
