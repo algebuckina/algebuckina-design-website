@@ -108,7 +108,7 @@ img:hover {
 }
 
 .product {
-    width: calc(75%/3 - 40px);
+    width: calc(100%/3 - 40px);
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     padding: 20px;
     float: left;
