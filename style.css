@@ -107,19 +107,12 @@ img:hover {
     filter: saturate(100%);
 }
 
-.products {
-    content: "";
-    display: table;
-    clear: both;
-    display: block;
-    width: 100%;
-}
-
 .product {
-    width: 33.33%;
+    width: calc(75%/3 - 40px);
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     padding: 20px;
     float: left;
+    display: block;
 }
 
 /*--SCROLLING NAV BAR--*/
