@@ -94,7 +94,7 @@ md-block {
     transition: 0.5s;
 }
 
-md-block:hover {
+a md-block:hover {
     color: blue;
     filter: saturate(100%);
     transition: 0.5s;
