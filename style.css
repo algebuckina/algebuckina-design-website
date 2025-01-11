@@ -91,6 +91,7 @@ md-block {
     /*width: calc(75% - 40px);*/
     padding: 20px;
     transition: 0.5s;
+    filter: saturate(0%)
 }
 
 md-block:hover {
@@ -106,6 +107,12 @@ md-block:hover {
     display: block;
 }
 
+.products {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*--SCROLLING NAV BAR--*/
 
 .nav2 {
@@ -118,7 +125,7 @@ md-block:hover {
 }
 
 .nav2Container {
-    height: 2602px;
+    bottom: 0;
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     float: right;
     margin-right: 20px;
