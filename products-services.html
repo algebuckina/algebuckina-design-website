@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <div class="nav2Container">
+    <div class="nav2Container" id="nav">
         <div class="nav2">
             <a href="#par1" id="pr1">
                 Products
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <main>
+    <main id="main">
         <md-block id="par1">
             # Products
 
@@ -273,6 +273,35 @@
 
         // runs the find top element function every time the user scrolls
         window.addEventListener('scroll', findTopElement);
+
+
+        // this makes sure the side nav bar is the same height as all the main content.
+        function adjustNavHeight() {
+            // Get the height of the <main> element
+            const mainElement = document.getElementById('main');
+            const mainHeight = mainElement.offsetHeight - 20;
+
+            // Apply that height to the <nav> element
+            const navElement = document.getElementById('nav');
+            navElement.style.height = mainHeight + 'px'; // Set the height in pixels
+        }
+
+        // Initial adjustment
+        adjustNavHeight();
+
+        // Create a MutationObserver to watch for changes in the <main> element
+        const mainElement = document.getElementById('main');
+        const observer = new MutationObserver(adjustNavHeight);
+
+        // Configure the observer to watch for child changes and attribute changes
+        observer.observe(mainElement, {
+            childList: true, // Watch for changes to child elements
+            subtree: true, // Watch for changes in all descendants
+            attributes: true // Watch for changes to attributes
+        });
+
+        // Also adjust height on window resize
+        window.addEventListener('resize', adjustNavHeight);
     </script>
 
     <script>
