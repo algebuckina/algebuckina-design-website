@@ -73,7 +73,6 @@ nav {
 }
 
 .navButtons {
-    width: 25%;
     padding: 10px;
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     font-weight: bold;
@@ -154,4 +153,54 @@ md-block:hover {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Mobile Page */
+
+@media only screen and (max-width: 720px) {
+
+    .headerLogo {
+        display: none;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .navButtons {
+        width: 50%;
+    }
+
+    .nav2 {
+        display: none;
+    }
+    
+}
+
+/* Small Page*/
+
+@media only screen and (max-width: 950px) and (min-width: 720px) {
+
+    .headerLogo {
+        display: none;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .navButtons {
+        width: 50%;
+    }
+    
+}
+
+/* Large Page*/
+
+@media only screen and (min-width: 950px) {
+
+    .navButtons {
+        width: 25%;
+    }
+
 }
