@@ -16,6 +16,12 @@ body {
     text-align: center;
 }
 
+.imagemiddleme {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 /*--HEADER--*/
 
 .headerTitle {
@@ -88,7 +94,6 @@ main {
 
 md-block {
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-    /*width: calc(75% - 40px);*/
     padding: 20px;
     transition: 0.5s;
     filter: saturate(0%)
@@ -99,18 +104,18 @@ md-block:hover {
     transition: 0.5s;
 }
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product {
     width: calc(100%/3 - 40px);
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     padding: 20px;
+    overflow-wrap: break-word;
+    margin: 0px;
     float: left;
-    display: block;
-}
-
-.products {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /*--SCROLLING NAV BAR--*/
