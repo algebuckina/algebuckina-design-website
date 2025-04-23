@@ -42,7 +42,6 @@ body {
 }
 
 .headerMain {
-    width: 60%;
     height: 150px;
     padding: 10px;
     text-align: center;
@@ -167,12 +166,20 @@ html {
         display: none;
     }
 
+    .headerMain {
+        width: 100%;
+    }
+
     .navButtons {
         width: 50%;
     }
 
     .nav2 {
         display: none;
+    }
+
+    .nav {
+        flex-flow: wrap;
     }
     
 }
@@ -189,8 +196,16 @@ html {
         display: none;
     }
 
+    .headerMain {
+        width: 100%;
+    }
+
     .navButtons {
         width: 50%;
+    }
+
+    .nav {
+        flex-flow: wrap;
     }
     
 }
@@ -201,6 +216,10 @@ html {
 
     .navButtons {
         width: 25%;
+    }
+
+    .headerMain {
+        width: 60%;
     }
 
 }
