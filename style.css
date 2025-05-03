@@ -80,13 +80,13 @@ nav {
 
 .navButtons {
     padding: 10px;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     font-weight: bold;
 }
 
 .nav3 {
     position: fixed;
-    top: 4px;
+    top: 10px;
+    right: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     display: none;
@@ -96,27 +96,28 @@ nav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
-    background-color: lightgrey;
+    background-color: #fffcf9;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     white-space: nowrap;
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 2px #231f20;
 }
 
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ffffff;
+    color: black;
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: blue;
 }
 
 .sidebar .closebtn {
@@ -129,7 +130,6 @@ nav {
 
 .openbtn {
     font-size: 20px;
-    background-color: white;
     cursor: pointer;
     border: none;
     color: black;
@@ -137,7 +137,7 @@ nav {
 }
 
 .openbtn:hover {
-    background-color: lightgrey;
+    background-color: blue;
 }
 
 /*--MAIN BODY & INFO--*/
