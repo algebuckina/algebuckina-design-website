@@ -111,6 +111,7 @@ md-block:hover {
 
 .product {
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+    width: calc(100%/3 - 40px);
     padding: 20px;
     overflow-wrap: break-word;
     margin: 0px;
@@ -184,12 +185,7 @@ html {
 
     .nav {
         flex-flow: wrap;
-    }
-
-    .product {
-        width: calc(100%/1 - 40px);
-    }
-    
+    }    
 }
 
 /* Small Page*/
@@ -214,12 +210,7 @@ html {
 
     .nav {
         flex-flow: wrap;
-    }
-
-    .product {
-        width: calc(100%/2 - 40px);
-    }
-    
+    }    
 }
 
 /* Large Page*/
@@ -233,9 +224,4 @@ html {
     .headerMain {
         width: 60%;
     }
-
-    product {
-        width: calc(100%/3 - 40px);
-    }
-
 }
