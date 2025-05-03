@@ -110,7 +110,6 @@ md-block:hover {
 }
 
 .product {
-    width: calc(100%/3 - 40px);
     box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
     padding: 20px;
     overflow-wrap: break-word;
@@ -186,6 +185,10 @@ html {
     .nav {
         flex-flow: wrap;
     }
+
+    .product {
+        width: calc(100%/1 - 40px);
+    }
     
 }
 
@@ -212,6 +215,10 @@ html {
     .nav {
         flex-flow: wrap;
     }
+
+    .product {
+        width: calc(100%/2 - 40px);
+    }
     
 }
 
@@ -225,6 +232,10 @@ html {
 
     .headerMain {
         width: 60%;
+    }
+
+    product {
+        width: calc(100%/3 - 40px);
     }
 
 }
