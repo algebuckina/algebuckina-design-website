@@ -109,6 +109,14 @@ md-block:hover {
     flex-wrap: wrap;
 }
 
+.product {
+    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+    padding: 20px;
+    overflow-wrap: break-word;
+    margin: 0px;
+    float: left;
+}
+
 /*--SCROLLING NAV BAR--*/
 
 .nav2 {
@@ -176,7 +184,11 @@ html {
 
     .nav {
         flex-flow: wrap;
-    }    
+    }
+
+    .product {
+        width: 100%;
+    }
 }
 
 /* Small Page*/
@@ -201,7 +213,11 @@ html {
 
     .nav {
         flex-flow: wrap;
-    }    
+    }
+
+    .product {
+        width: 100%;
+    }
 }
 
 /* Large Page*/
@@ -217,11 +233,6 @@ html {
     }
 
     .product {
-        box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
         width: calc(100%/3 - 40px);
-        padding: 20px;
-        overflow-wrap: break-word;
-        margin: 0px;
-        float: left;
     }
 }
