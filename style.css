@@ -91,13 +91,14 @@ nav {
     padding-bottom: 10px;
     padding-top: 10px;
     display: none;
+    z-index: 3;
 }
 
 .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: #fffcf9;
@@ -130,7 +131,7 @@ nav {
 }
 
 .openbtn {
-    z-index: 2;
+    z-index: 3;
     font-size: 20px;
     cursor: pointer;
     border: none;
