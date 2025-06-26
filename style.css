@@ -1,316 +1,46 @@
-@font-face {
-    font-family: CMUNVT;
-    src: url(fonts/cmunvt.ttf);
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    /* Use Ubuntu Monospace font */
+    background-color: #1e1e1e;
+    color: #c5c8c6;
+    margin: 0;
+    padding: 20px;
 }
 
-body {
-    font-family: CMUNVT, monospace, sans-serif;
-    background: #fffcf9 url(images/ricepaper.jpg);
-    background-repeat: repeat;
-    background-size: auto;
-    margin: auto;
-    padding: 0;
-    max-width: 1500px;
+pre {
+    font-size: 1.5em;
+    display: none;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    display: none;
+    /* Hide content initially */
+}
+
+nav a {
+    color: #B6C48A;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-align: center;
+    color: #4C8C4A;
 }
 
 .middleme {
     text-align: center;
 }
 
-.imagemiddleme {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/*--HEADER--*/
-
-.headerTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.headerLogo {
-    width: 20%;
-    height: 150px;
-    padding: 10px;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.headerLogo img {
-    max-width: 100%;
-    max-height: 130px;
-    height: auto;
-}
-
-.headerMain {
-    height: 150px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.headerLinks {
-    width: 20%;
-    height: 150px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.headerLinks a {
-    text-decoration: none;
-}
-
-/*--NAVIGATION--*/
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-}
-
-.navButtons {
-    padding: 10px;
-    font-weight: bold;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-}
-
-.nav3 {
-    position: fixed;
-    top: 15px;
-    left: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: none;
-    z-index: 3;
-}
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: #fffcf9;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    white-space: nowrap;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 2px #231f20;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: blue;
-}
-
-.sidebar .closebtn {
+footer {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.openbtn {
-    z-index: 3;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    color: black;
-    display: none;
-    background-color: #00000000;
-}
-
-.openbtn:hover {
-    color: blue;
-}
-
-/*--MAIN BODY & INFO--*/
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-md-block {
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-    padding: 20px;
-    transition: 0.5s;
-    filter: saturate(0%)
-}
-
-md-block:hover {
-    filter: saturate(100%);
-    transition: 0.5s;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product {
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-    padding: 20px;
-    overflow-wrap: break-word;
-    margin: 0px;
-    float: left;
-}
-
-/*--SCROLLING NAV BAR--*/
-
-.nav2 {
-    width: 200px;
-    padding-left: 25px;
-    position: sticky;
-    overflow: hidden;
-    top: 125px;
-    padding-top: 30px;
-}
-
-.nav2Container {
-    height: 500px;
-    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
-    float: right;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.nav2 a {
-    border-left-color: lightgray;
-    color: lightgray;
-    border-left: 4px solid;
-    padding-left: 8px;
-    display: block;
-    unicode-bidi: isolate;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.nav2 a:hover {
-    color: black;
-    border-left-color: black;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Small Mobile Page */
-
-@media only screen and (max-width: 500px) {
-
-    nav {
-        display: none;
-    }
-
-    .nav3 {
-        display: block;
-    }
-
-    .openbtn {
-        display: block;
-    }
-}
-
-/* Mobile Page */
-
-@media only screen and (max-width: 720px) {
-
-    .headerLogo {
-        display: none;
-    }
-
-    .headerLinks {
-        display: none;
-    }
-
-    .headerMain {
-        width: 100%;
-    }
-
-    .navButtons {
-        width: 50%;
-    }
-
-    .nav2 {
-        display: none;
-    }
-
-    .nav {
-        flex-flow: wrap;
-    }
-
-    .product {
-        width: 100%;
-    }
-}
-
-/* Small Page*/
-
-@media only screen and (max-width: 950px) and (min-width: 720px) {
-
-    .headerLogo {
-        display: none;
-    }
-
-    .headerLinks {
-        display: none;
-    }
-
-    .headerMain {
-        width: 100%;
-    }
-
-    .navButtons {
-        width: 50%;
-    }
-
-    .nav {
-        flex-flow: wrap;
-    }
-
-    .product {
-        width: 100%;
-    }
-}
-
-/* Large Page*/
-
-@media only screen and (min-width: 950px) {
-
-    .navButtons {
-        width: 25%;
-    }
-
-    .headerMain {
-        width: 60%;
-    }
-
-    .product {
-        width: calc(100%/3 - 40px);
-    }
+    bottom: 0;
+    text-align: center;
 }
