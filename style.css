@@ -85,6 +85,7 @@ nav a:hover {
   border-radius: 5px 5px 0px 0px;
   border: 3px solid #4C8C4A;
   margin-bottom: -3px;
+  cursor: pointer;
 }
 
 #currentPage {
@@ -111,6 +112,7 @@ nav a:hover {
   z-index: 1;
   border: #4C8C4A;
   border-width: 10px;
+  margin-top: 3px;
 }
 
 /* Links inside the dropdown */
@@ -126,6 +128,3 @@ nav a:hover {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;} 

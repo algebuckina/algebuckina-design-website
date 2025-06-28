@@ -22,7 +22,7 @@
 
     <nav>
         <div class="dropdown">
-            <button class="dropbtn" id="currentPage">Home</button>
+            <button class="dropbtn" id="currentPage" onclick="location.href='./index.html'">Home</button>
             <div class="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
@@ -30,36 +30,31 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Services</button>
+            <button class="dropbtn" onclick="location.href='./services.html'">Services</button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Prototyping</a>
+                <a href="#">Manufacturing</a>
+                <a href="#">CAD</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Products</button>
+            <button class="dropbtn" onclick="location.href='./products.html'">Products</button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Cable Combs</a>
+                <a href="#">Sim Racing</a>
+                <a href="#">3D Prints</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Community</button>
+            <button class="dropbtn" onclick="location.href='./community.html'">Community</button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">AEC</a>
+                <a href="#">Games Night</a>
+                <a href="#">Discord</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Contact</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
+            <button class="dropbtn" onclick="location.href='./contact.html'">Contact</button>
         </div>
     </nav>
 
@@ -87,45 +82,6 @@
             <p class="middleme">&copy; 2025 Algebuckina Design PTY LTD. All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-
-        function typeText(text, delay, getId, callback) {
-            let index = 0;
-            const intervalId = setInterval(() => {
-                if (index < text.length) {
-                    document.getElementById(getId).innerHTML += text[index];
-                    index++;
-                } else {
-                    clearInterval(intervalId);
-                    callback();
-                }
-            }, delay);
-        }
-
-        function afterTypingFinished() {
-            document.getElementById('compInfo').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('prompt1').style.display = 'block';
-                typeText("./index.html", 150, 'prompt2', loadWebpage);
-            }, 2000)
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const textToType1 = "neofetch";
-            typeText(textToType1, 150, 'neofetch', afterTypingFinished);
-        });
-
-
-        // Simulate loading effect
-        function loadWebpage() {
-            setTimeout(() => {
-                window.open('./home.html', '_self');
-            }, 1000); // Change the duration as needed (3000ms = 3 seconds)
-        };
-
-    </script>
-
 </body>
 
 </html>
