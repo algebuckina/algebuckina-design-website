@@ -9,33 +9,9 @@
 #F4E1B2
 #1e1e1e
 
-# Computer Setup
+## Image default
 
-## Install a few things
-
-### Microsoft Edit
-
-```
-wget https://github.com/microsoft/edit/releases/download/v1.1.0/edit-1.1.0-x86_64-linux-gnu.tar.zst
-tar xvf edit-1.1.0-x86_64-linux-gnu.tar.zst
-sudo mv edit /usr/local/bin/
-```
-
-## Flatpak Install
-
-install all the flatpaks needed
-
-```
-flatpak install flathub cc.arduino.IDE2 com.obsproject.Studio com.visualstudio.code org.blender.Blender org.freecad.FreeCAD org.godotengine.Godot org.kde.kdenlive org.kde.krita org.kicad.KiCad org.videolan.VLC io.github.shiftey.Desktop org.gimp.GIMP org.librecad.librecad org.mozilla.Thunderbird com.prusa3d.PrusaSlicer
-```
-
-restrict flatpak use for admins only
-
-```
-sudo chmod 750 /usr/bin/flatpak
-```
-
-## User Setup
+1500px x 600px jpeg with 85% quality
 
 
 ## website stuff
