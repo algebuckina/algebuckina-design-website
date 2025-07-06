@@ -29,6 +29,26 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-family: 'Hooskai', 'Ubuntu Mono', monospace;
+    font-size: 25px;
+    color: #4C8C4A;
+}
+
+h3 {
+    font-family: 'Hooskai', 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    color: #F4E1B2;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #B6C48A
+}
+
 pre {
     font-size: 1.5em;
     display: none;
@@ -47,8 +67,6 @@ pre {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     text-align: center;
     padding: 20px;
 }
