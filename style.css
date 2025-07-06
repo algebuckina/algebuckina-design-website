@@ -17,7 +17,6 @@ body {
     /* Use Ubuntu Monospace font */
     background-color: #1e1e1e;
     color: #c5c8c6;
-    margin: 0;
 }
 
 header{
@@ -60,6 +59,8 @@ pre {
     margin: 0 auto;
     line-height: 1.6;
     padding: 20px;
+    margin: auto;
+    max-width: 1500px;
 }
 
 .middleme {
@@ -146,3 +147,15 @@ nav a:hover {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+
+.color-convert {
+  filter: none;
+}
+
+.color-convert:hover {
+  filter: none;
+}
+
+.color-convert.converted {
+  filter: none;
+}
