@@ -22,7 +22,7 @@
 
     <nav>
         <div class="dropdown">
-            <button class="dropbtn" id="currentPage" onclick="location.href='./home.html'">Home</button>
+            <button class="dropbtn" onclick="location.href='./home.html'">Home</button>
             <div class="dropdown-content">
                 <a href="./index.html">neofetch</a>
             </div>
@@ -51,74 +51,65 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn" onclick="location.href='./contact.html'">Contact</button>
+            <button class="dropbtn" id="currentPage" onclick="location.href='./contact.html'">Contact</button>
         </div>
     </nav>
 
     <div class="content" id="content">
 
-        <a href="https://www.etsy.com/au/listing/1876142347/custom-size-cable-combs" target="_blank"><img src="./images/webHeroImage.jpg" width="100%"></a>
+        <hr>
+
+        <h2 class="middleme">Contact Us</h2>
 
         <hr>
 
-        <h2 class="middleme">Locally made, eco-friendly products and services for individuals and small businesses.</h2>
+        <p>For business enquiries, please fill out the contact form bellow and we will be in contact with you within 3 business days.</p>
+
+        <p>  - Office Hours: Monday to Saturday, 5pm to 8pm <br>  - Old Toongabbie NSW 2146</p>
+
+        <p>If you'd like to contact us about our community events, please feel free to reach out to us on <a href="https://discord.gg/2JnrS6n">Discord</a> and ping @algebuckina in general with your question.</p>
 
         <hr>
 
-        <h3 class="middleme" id="aboutUs">About Us</h3>
+        <h3 class="middleme">Contact Form</h3>
 
         <hr>
 
-        <p>Welcome to Algebuckina Design, a sustainable design and manufacturing business based in the Parramatta Region. We're passionate about creating eco-friendly products and services that make a positive impact on our community and the environment.</p>
+        <form action="https://formspree.io/f/xrbboygw" method="POST">
+            <label>
+                <p>Your email:</p>
+                <input type="email" name="email" style="width: 100%; font-size: 15px;">
+            </label>
+
+            <br>
+
+            <label>
+                <p>Your message:</p>
+                <p><textarea name="message" style="height: 300px; width: 100%; font-size: 15px;"></textarea></p>
+            </label>
+
+            <br>
+
+            <button type="submit" class="dropbtn">Send</button>
+        </form>
+
+        <br>
 
         <hr>
 
-        <img src="./images/cnc.jpg" width="100%">
+        <h2 class="middleme">Socials</h2>
 
         <hr>
 
-        <h3 class="middleme" id="services">Services</h3>
+        <h3 class="middleme"><a href="https://discord.gg/2JnrS6n" target="_blank">Discord</a></h3>
+        <h3 class="middleme"><a href="https://github.com/algebuckina/" target="_blank">Github</a></h3>
+        <h3 class="middleme"><a href="https://www.instagram.com/algebuckina/" target="_blank">Instagram</a></h3>
+        <h3 class="middleme"><a href="https://au.linkedin.com/company/algebuckina-design?trk=public_post_feed-actor-image" target="_blank">Linkedin</a></h3>
+        <h3 class="middleme"><a href="https://www.twitch.tv/algebuckina_design" target="_blank">Twitch</a></h3>
+        <h3 class="middleme"><a href="https://www.instagram.com/algebuckina/" target="_blank">Youtube</a></h3>
 
         <hr>
-
-        <p>We offer a range of services, including reverse engineering, small manufacturing runs, and prototyping. Our team is dedicated to providing high-quality solutions for individuals and small businesses.</p>
-
-        <p><a href="#">Find more about our offerings here!</a></p>
-
-        <hr>
-
-        <img src="./images/beltboy.jpg" width="100%">
-
-        <hr>
-
-        <h3 class="middleme" id="products">Products</h3>
-
-        <hr>
-
-        <p>We build products that not only solve problems but also foster a sense of community. We're committed to creating sustainable, eco-friendly products that are designed to last. By choosing us, you're not just buying a product - you're joining a community that values sustainability, innovation, and connection.</p>
-
-        <p><a href="#">Find some of our products here!</a></p>
-
-        <hr>
-
-        <img src="./images/cableCombsFront.jpg" width="100%">
-
-        <hr>
-
-        <h3 class="middleme" id="community">Community</h3>
-
-        <hr>
-
-        <p>Join our community and be part of exclusive events and experiences. From sim racing tournaments to behind the scenes vidoes and games nights, we're committed to building a community that shares our passion for sustainability and innovation.</p>
-
-        <p><a href="#">Find out about our upcomming events here!</a></p>
-
-        <hr>
-
-        <img src="./images/aec.jpg" width="100%">
-
-        <hr>
-
+        
         <footer>
             <p class="middleme">&copy; 2025 Algebuckina Design PTY LTD. All rights reserved.</p>
         </footer>
