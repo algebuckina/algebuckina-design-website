@@ -18,10 +18,36 @@
     <link rel="manifest" href="./ico/site.webmanifest">
 </head>
 
+<div class="nav2" id="nav2">
+    <button class="cross" id="cross" onclick="closeNav()">x</button>
+    <br>
+    <a href="./home.html"><h2>Home</h2></a>
+    <a href="./index.html"><h3>- neofetch</h3></a>
+
+    <a href="./services.html"><h2>Services</h2></a>
+    <a href="./services.html#prototyping"><h3>- Prototyping</h3></a>
+    <a href="./services.html#manufacturing"><h3>- Manufacturing</h3></a>
+    <a href="./services.html#CAD"><h3>- CAD</h3></a>
+
+    <a href="./products.html"><h2>Products</h2></a>
+    <a href="./products.html#cablecombs"><h3>- Cable Combs</h3></a>
+    <a href="./products.html#simrace"><h3>- Sim Racing</h3></a>
+
+    <a href="./community.html"><h2>Community</h2></a>
+    <a href="./community.html#aec"><h3>- AEC</h3></a>
+    <a href="./community.html#games"><h3>- Games Night</h3></a>
+    <a href="./community.html#bts"><h3>- Behind the Scenes</h3></a>
+
+    <a href="./contact.html"><h2>Contact Us</h2></a>
+</div>
+
+<button class="hamburger" onclick="openNav()">≡</button>
+
 <body>
     <header style="display: flex; align-items: center;">
-        <img src="images/logo.png" height="150px" style="vertical-align: middle;">
-        <h1 style="vertical-align: middle;"><span style="color: #4C8C4A;">ALGEBUCKINA</span> <span style="color: #B6C48A;">DESIGN</span></h1>
+        <img class="logo" src="images/logo.png" height="150px">
+        <h1 style="vertical-align: middle;"><span style="color: #4C8C4A;">ALGEBUCKINA</span> <span
+                style="color: #B6C48A;">DESIGN</span></h1>
     </header>
 
     <nav>
@@ -108,5 +134,17 @@
         </footer>
     </div>
 </body>
+
+<script>
+    function openNav() {
+        document.getElementById("nav2").style.height = "100%";
+        document.getElementById("cross").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("nav2").style.height = "0px";
+        document.getElementById("cross").style.display = "none";
+    }
+</script>
 
 </html>

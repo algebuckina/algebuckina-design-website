@@ -7,6 +7,10 @@ Black:          #1e1e1e
 White:          #c5c8c6
 */
 
+.hamburger {
+    display: none;
+}
+
 /*Phone Sized*/
 @media only screen and (max-width: 741px) {
     h1 {
@@ -27,6 +31,76 @@ White:          #c5c8c6
 
     .dropdown {
         display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .dropbtn {
+        display: none;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .nav2 {
+        height: 0px;
+        background-color: #1e1e1e;
+        width: 100%;
+        height: 0px;
+        z-index: 1001;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        white-space: nowrap;
+        padding-left: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        color: #4C8C4A;
+        font-size: 20px;
+        margin: 5px;
+        padding: 1px 8px 4px 8px;
+        position: fixed;
+        z-index: 1000;
+        background-color: #1e1e1e;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cross {
+        color: #4C8C4A;
+        font-size: 20px;
+        margin: 10px;
+        padding: 1px 10px 4px 10px;
+        position: fixed;
+        right: 0px;
+        background-color: #1e1e1e;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+        transition: 1s;
+    }
+
+    .nav2 h3 {
+        padding-left: 20px;
+    }
+
+    .nav2 a {
+        text-decoration: none;
+    }
+
+    .neofetchICO {
+        font-size: 4px;
+    }
+
+    .neofetch {
+        font-size: 4px;
     }
 }
 
@@ -174,6 +248,10 @@ nav a:hover {
   border: 3px solid #4C8C4A;
   margin-bottom: -3px;
   cursor: pointer;
+}
+
+.logo {
+    vertical-align: middle;
 }
 
 #currentPage {
