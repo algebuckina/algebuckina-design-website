@@ -60,6 +60,7 @@ White:          #c5c8c6
         transition: 0.5s;
         white-space: nowrap;
         padding-left: 20px;
+        display: block;
     }
 
     .hamburger {
