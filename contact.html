@@ -7,204 +7,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algebuckina Design</title>
     <meta name="description" content="ALGEBUCKINA">
-    <meta name="keywords" content="ALGEBUCKINA">
     <meta name="author" content="Bradley Turner">
     <meta property="og:image" content="./favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="shotcut icon" type="image/ico" href="./favicon.ico">
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">
 </head>
 
+<div class="nav2" id="nav2">
+    <button class="cross" id="cross" onclick="closeNav()">x</button>
+    <br>
+    <a href="./home.html"><h2>Home</h2></a>
+    <a href="./index.html"><h3>- neofetch</h3></a>
+
+    <a href="./services.html"><h2>Services</h2></a>
+    <a href="./services.html#prototyping"><h3>- Prototyping</h3></a>
+    <a href="./services.html#manufacturing"><h3>- Manufacturing</h3></a>
+    <a href="./services.html#CAD"><h3>- CAD</h3></a>
+
+    <a href="./products.html"><h2>Products</h2></a>
+    <a href="./products.html#cablecombs"><h3>- Cable Combs</h3></a>
+    <a href="./products.html#simrace"><h3>- Sim Racing</h3></a>
+
+    <a href="./community.html"><h2>Community</h2></a>
+    <a href="./community.html#aec"><h3>- AEC</h3></a>
+    <a href="./community.html#games"><h3>- Games Night</h3></a>
+    <a href="./community.html#bts"><h3>- Behind the Scenes</h3></a>
+
+    <a href="./contact.html"><h2>Contact Us</h2></a>
+</div>
+
+<button class="hamburger" onclick="openNav()">≡</button>
+
 <body>
-
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./index.html">HOME</a>
-        <a href="./products-services.html">PRODUCTS</a>
-        <a href="./contact.html">CONTACT</a>
-        <a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a>
-        <a href="https://github.com/algebuckina">GITHUB</a>
-        <a href="https://www.etsy.com/au/shop/AlgebuckinaDesign">ETSY STORE</a>
-    </div>
-
-    <div class="nav3">
-        <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
-
-    <header>
-        <div class="headerTitle">
-            <div class="headerLogo">
-                <img src="images/logo.png">
-            </div>
-            <div class="headerMain">
-                <p id="current-date"></p>
-                <h1>Algebuckina Design</h1>
-                <h4 class="subtitle">Environmentally Conscious Design</h4>
-            </div>
-            <div class="headerLinks">
-                <p><a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a></p>
-                <p><a href="https://github.com/algebuckina">GITHUB</a></p>
-                <p><a href="https://www.etsy.com/au/shop/AlgebuckinaDesign">ETSY STORE</a></p>
-            </div>
-        </div>
-
-        <nav>
-            <div class="navButtons"><a href="./index.html">HOME</a></div>
-            <div class="navButtons"><a href="./products-services.html">PRODUCTS</a></div>
-            <div class="navButtons"><a href="./community.html">COMMUNITY</a></div>
-            <div class="navButtons"><a href="./contact.html">CONTACT</a></div>
-        </nav>
+    <header style="display: flex; align-items: center;">
+        <img class="logo" src="images/logo.png" height="150px">
+        <h1 style="vertical-align: middle;"><span style="color: #4C8C4A;">ALGEBUCKINA</span> <span
+                style="color: #B6C48A;">DESIGN</span></h1>
     </header>
 
-    <div class="nav2Container" id="nav">
-        <div class="nav2">
-            <a href="#par1" id="pr1">
-                Contact Us
-            </a>
-            <a href="#par2" id="pr2">
-                Links
-            </a>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./home.html'">Home</button>
+            <div class="dropdown-content">
+                <a href="./index.html">neofetch</a>
+            </div>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./services.html'">Services</button>
+            <div class="dropdown-content">
+                <a href="./services.html#prototyping">Prototyping</a>
+                <a href="./services.html#manufacturing">Manufacturing</a>
+                <a href="./services.html#CAD">CAD</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./products.html'">Products</button>
+            <div class="dropdown-content">
+                <a href="./products.html#cablecombs">Cable Combs</a>
+                <a href="./products.html#simrace">Sim Racing</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./community.html'">Community</button>
+            <div class="dropdown-content">
+                <a href="./community.html#aec">AEC</a>
+                <a href="./community.html#games">Games Night</a>
+                <a href="./community.html#bts">Behind the Scenes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="currentPage" onclick="location.href='./contact.html'">Contact</button>
+        </div>
+    </nav>
+
+    <div class="content" id="content">
+
+        <hr>
+
+        <h2 class="middleme">Contact Us</h2>
+
+        <hr>
+
+        <p>For business enquiries, please fill out the contact form bellow and we will be in contact with you within 3 business days.</p>
+
+        <p>  - Office Hours: Monday to Saturday, 5pm to 8pm <br>  - Old Toongabbie NSW 2146</p>
+
+        <p>If you'd like to contact us about our community events, please feel free to reach out to us on <a href="https://discord.gg/2JnrS6n">Discord</a> and ping @algebuckina in general with your question.</p>
+
+        <hr>
+
+        <h3 class="middleme">Contact Form</h3>
+
+        <hr>
+
+        <form action="https://formspree.io/f/xrbboygw" method="POST">
+            <label>
+                <p>Your email:</p>
+                <input type="email" name="email" style="width: 100%; font-size: 15px;">
+            </label>
+
+            <br>
+
+            <label>
+                <p>Your message:</p>
+                <p><textarea name="message" style="height: 300px; width: 100%; font-size: 15px;"></textarea></p>
+            </label>
+
+            <br>
+
+            <button type="submit" class="dropbtn">Send</button>
+        </form>
+
+        <br>
+
+        <hr>
+
+        <h2 class="middleme">Socials</h2>
+
+        <hr>
+
+        <h3 class="middleme"><a href="https://discord.gg/2JnrS6n" target="_blank">Discord</a></h3>
+        <h3 class="middleme"><a href="https://github.com/algebuckina/" target="_blank">Github</a></h3>
+        <h3 class="middleme"><a href="https://www.instagram.com/algebuckina/" target="_blank">Instagram</a></h3>
+        <h3 class="middleme"><a href="https://au.linkedin.com/company/algebuckina-design?trk=public_post_feed-actor-image" target="_blank">Linkedin</a></h3>
+        <h3 class="middleme"><a href="https://www.twitch.tv/algebuckina_design" target="_blank">Twitch</a></h3>
+        <h3 class="middleme"><a href="https://www.instagram.com/algebuckina/" target="_blank">Youtube</a></h3>
+
+        <hr>
+        
+        <footer>
+            <p class="middleme">&copy; 2025 Algebuckina Design PTY LTD. All rights reserved.</p>
+        </footer>
     </div>
-
-    <main id="main">
-        <md-block id="par1">
-            # Contact Us
-
-            this will need a lot of css work to look better and fit in with the look of the rest of the website
-
-            <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/xrbboygw" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-
-        </md-block>
-
-        <md-block id="par2" class="middleme">
-            # Links
-
-            <img src="images/logo.png" alt="logo" width="200px">
-
-            # Algebuckina Design
-
-            ## [Website](www.algebuckina-design.au) | [Contact Us](./contact-us) | [Github](https://github.com/algebuckina) | [Instagram](https://www.instagram.com/algebuckina/) | [Linkedin](https://www.linkedin.com/company/algebuckina-design/) | [Twitch](https://www.twitch.tv/algebuckina_design) | [Twitter](https://twitter.com/algebuckina) | [Youtube](https://www.youtube.com/channel/UCp-P5ys675ju4mfHJCrfGfw)
-
-        </md-block>
-
-        <md-block>
-            ©2025 Algebuckina Design PTY LTD
-        </md-block>
-    </main>
-
-    <script>
-
-        // This is the code that finds the top id called "par#" which is the paragraphs in the main div. It then uses that info to change the colour of the nav2 element
-        function findTopElement() {
-            // Select all elements in the document that have an ID attribute
-            const elements = document.querySelectorAll('[id]');
-
-            // Initialize variables to keep track of the topmost element and its position
-            let topElement = null;
-            let minTop = Infinity;
-
-            // Iterate over each element with an ID
-            elements.forEach(el => {
-                // Check if the element's ID contains the substring 'par'
-                if (el.id.includes('par')) {
-                    // Get the position of the element relative to the viewport
-                    const rect = el.getBoundingClientRect();
-
-                    // Check if this element is within the viewport and closer to the top than the current topmost element
-                    if (rect.top >= 0 && rect.top < minTop) {
-                        // Update the minimum top position
-                        minTop = rect.top;
-                        // Update the topmost element
-                        topElement = el;
-                    }
-                }
-            });
-
-            // removes the a from par# to turn it into pr# which refers to the ID of the nav2 items
-            let topEl = topElement.id;
-            let newTopEl = topEl.replace(/a/g, '');
-
-            // changes all the pr# ID's to light gray before the top on on the user space is changed to active
-            //need to change 9 to how many (pr#) ID's there are
-            for (let i = 1; i <= 9; i++) {
-                let element = document.getElementById(`pr${i}`);
-                if (element) {
-                    element.style.color = "lightgray";
-                    element.style.borderLeftColor = "lightgray";
-                }
-            }
-
-            // changes the colour of the active navbar2 ID
-            document.getElementById(newTopEl).style["color"] = "#231f20";
-            document.getElementById(newTopEl).style["border-left-color"] = "#231f20";
-        }
-
-        // runs the find top element function every time the user scrolls
-        window.addEventListener('scroll', findTopElement);
-
-
-        // this makes sure the side nav bar is the same height as all the main content.
-        function adjustNavHeight() {
-            // Get the height of the <main> element
-            const mainElement = document.getElementById('main');
-            const mainHeight = mainElement.offsetHeight - 20;
-
-            // Apply that height to the <nav> element
-            const navElement = document.getElementById('nav');
-            navElement.style.height = mainHeight + 'px'; // Set the height in pixels
-        }
-
-        // Initial adjustment
-        adjustNavHeight();
-
-        // Create a MutationObserver to watch for changes in the <main> element
-        const mainElement = document.getElementById('main');
-        const observer = new MutationObserver(adjustNavHeight);
-
-        // Configure the observer to watch for child changes and attribute changes
-        observer.observe(mainElement, {
-            childList: true, // Watch for changes to child elements
-            subtree: true, // Watch for changes in all descendants
-            attributes: true // Watch for changes to attributes
-        });
-
-        // Also adjust height on window resize
-        window.addEventListener('resize', adjustNavHeight);
-    </script>
-
-    <script>
-        function formatDate(date) {
-            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-            return date.toLocaleDateString('en-GB', options);
-        }
-
-        const currentDate = new Date();
-        document.getElementById('current-date').innerText = formatDate(currentDate);
-    </script>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-    </script>
 </body>
 
+<script>
+    function openNav() {
+        document.getElementById("nav2").style.height = "100%";
+        document.getElementById("cross").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("nav2").style.height = "0px";
+        document.getElementById("cross").style.display = "none";
+    }
+</script>
 
 </html>

@@ -7,379 +7,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algebuckina Design</title>
     <meta name="description" content="ALGEBUCKINA">
-    <meta name="keywords" content="ALGEBUCKINA">
     <meta name="author" content="Bradley Turner">
     <meta property="og:image" content="./favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="shotcut icon" type="image/ico" href="./favicon.ico">
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">
 </head>
 
+<div class="nav2" id="nav2">
+    <button class="cross" id="cross" onclick="closeNav()">x</button>
+    <br>
+    <a href="./home.html">
+        <h2>Home</h2>
+    </a>
+    <a href="./index.html">
+        <h3>- neofetch</h3>
+    </a>
+
+    <a href="./services.html">
+        <h2>Services</h2>
+    </a>
+    <a href="./services.html#prototyping">
+        <h3>- Prototyping</h3>
+    </a>
+    <a href="./services.html#manufacturing">
+        <h3>- Manufacturing</h3>
+    </a>
+    <a href="./services.html#CAD">
+        <h3>- CAD</h3>
+    </a>
+
+    <a href="./products.html">
+        <h2>Products</h2>
+    </a>
+    <a href="./products.html#cablecombs">
+        <h3>- Cable Combs</h3>
+    </a>
+    <a href="./products.html#simrace">
+        <h3>- Sim Racing</h3>
+    </a>
+
+    <a href="./community.html">
+        <h2>Community</h2>
+    </a>
+    <a href="./community.html#aec">
+        <h3>- AEC</h3>
+    </a>
+    <a href="./community.html#games">
+        <h3>- Games Night</h3>
+    </a>
+    <a href="./community.html#bts">
+        <h3>- Behind the Scenes</h3>
+    </a>
+
+    <a href="./contact.html">
+        <h2>Contact Us</h2>
+    </a>
+</div>
+
+<button class="hamburger" onclick="openNav()">≡</button>
+
 <body>
-
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./index.html">HOME</a>
-        <a href="./products-services.html">PRODUCTS</a>
-        <a href="./contact.html">CONTACT</a>
-        <a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a>
-        <a href="https://github.com/algebuckina">GITHUB</a>
-        <a href="https://www.etsy.com/au/shop/AlgebuckinaDesign">ETSY STORE</a>
-    </div>
-
-    <div class="nav3">
-        <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
-
-    <header>
-        <div class="headerTitle">
-            <div class="headerLogo">
-                <img src="images/logo.png">
-            </div>
-            <div class="headerMain">
-                <p id="current-date"></p>
-                <h1>Algebuckina Design</h1>
-                <h4 class="subtitle">Environmentally Conscious Design</h4>
-            </div>
-            <div class="headerLinks">
-                <p><a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a></p>
-                <p><a href="https://github.com/algebuckina">GITHUB</a></p>
-                <p><a href="https://www.etsy.com/au/shop/AlgebuckinaDesign">ETSY STORE</a></p>
-            </div>
-        </div>
-
-        <nav>
-            <div class="navButtons"><a href="./index.html">HOME</a></div>
-            <div class="navButtons"><a href="./products-services.html">PRODUCTS</a></div>
-            <div class="navButtons"><a href="./community.html">COMMUNITY</a></div>
-            <div class="navButtons"><a href="./contact.html">CONTACT</a></div>
-        </nav>
+    <header style="display: flex; align-items: center;">
+        <img class="logo" src="images/logo.png" height="150px">
+        <h1 style="vertical-align: middle;"><span style="color: #4C8C4A;">ALGEBUCKINA</span> <span
+                style="color: #B6C48A;">DESIGN</span></h1>
     </header>
 
-    <div class="nav2Container" id="nav">
-        <div class="nav2">
-            <a href="#par1" id="pr1">
-                Overview
-            </a>
-            <a href="#par2" id="pr2">
-                2025 Season
-            </a>
-            <a href="#par3" id="pr3">
-                Latest Livestream
-            </a>
-            <a href="#par4" id="pr4">
-                Rules and Regulations
-            </a>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./home.html'">Home</button>
+            <div class="dropdown-content">
+                <a href="./index.html">neofetch</a>
+            </div>
         </div>
-    </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./services.html'">Services</button>
+            <div class="dropdown-content">
+                <a href="./services.html#prototyping">Prototyping</a>
+                <a href="./services.html#manufacturing">Manufacturing</a>
+                <a href="./services.html#CAD">CAD</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./products.html'">Products</button>
+            <div class="dropdown-content">
+                <a href="./products.html#cablecombs">Cable Combs</a>
+                <a href="./products.html#simrace">Sim Racing</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="currentPage" onclick="location.href='./community.html'">Community</button>
+            <div class="dropdown-content">
+                <a href="./community.html#aec">AEC</a>
+                <a href="./community.html#games">Games Night</a>
+                <a href="./community.html#bts">Behind the Scenes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./contact.html'">Contact</button>
+        </div>
+    </nav>
 
-    <main id="main">
-        <md-block id="par1">
-            # Algebuckina Endurance Series
+    <div class="content" id="content">
 
+        <img src="./images/community.jpg" width="100%">
+
+        <hr>
+
+        <h2 class="middleme">Algebuckina Endurance Championship</h2>
+
+        <hr>
+
+        <p>
             The Algebuckina Endurance Series (AEC) has been a long running Sim Racing Esports Series that has gone
-            through multiple iterations, but in it's current form, uses Assetto Corsa. It's currently free of charge
+            through multiple iterations, but in it’s current form, uses Assetto Corsa. It’s currently free of charge
             with no plan to change this in the future and server infrastructure is provided by Algebuckina Design.
-
+        </p>
+        <p>
             For 2025, we will be continuing with GT3 cars just like 2024, but with the upgraded GT3 EVO II cars. Cars
             will be chosen in the reverse of the 2024 championship results with 2 of each car available. If a car is
             already chosen and someone selects the same car, they form a team where it is encouraged that the more
             experienced drivers help out the less experienced with setup and strategy.
+        </p>
+        <p>
+            To compress the field’s skill and experience level, every driver is given a compulsory pit time that they
+            must serve throughout the race. This means, when a driver pits, they must wait for an allotted time after
+            servicing has finished on the car, theoretically it so everyone finishes the race at the same time.
+        </p>
+        <p>
+            After reading The Rules and Regulations below, you can find our championship sign-ups <a
+                href="https://aec.algebuckina-design.au/championship/07bcbc99-cae4-4e4e-9735-fa1ac4cc4a40"
+                target="_blank"> here.</a>
+        </p>
+        <p>
+            Once you have signed up, someone will be in contact with you to help get everything setup on your end
+            including files to download and the Discord link.
+        </p>
 
-            To compress the field's skill and experience level, every driver is given a compulsory pit time that they must serve
-            throughout the race. This means, when a driver pits, they must wait for an allotted time after servicing has finished on
-            the car, theoretically it so everyone finishes the race at the same time.
+        <hr>
 
-            After reading [The Rules and Regulations here,](./aec.html#par4) you can find our [championship sign-ups here.](https://aec.algebuckina-design.au/championship/07bcbc99-cae4-4e4e-9735-fa1ac4cc4a40)
+        <h3 class="middleme">2025 Season</h3>
 
-            Once you have signed up, someone will be in contact with you to help get everything setup on your end including files to download and the Discord link.
+        <hr>
 
-        </md-block>
+        <h3>Cars</h3>
 
-        <md-block id="par2">
-            # 2025 Season
+        <p>The cars have also been performance balanced to attempt to level the playing field, and they are limited to
+            the following:</p>
 
-            ## Cars
+        <p>Audi R8 LMS GT3 Evo 2 (0/2 Available)</p>
+        <p>BMW M6 GT3 (2/2 Available)</p>
+        <p>Corvette C8.R GT3 (2/2 Available)</p>
+        <p>Ferrari 296 GT3 (1/2 Available)</p>
+        <p>Honda NSW GT3 Evo II (1/1 Available)</p>
+        <p>Lamborghini Huracan GT3 Evo II (1/2 Available)</p>
+        <p>Lexus RC F GT3 (1/2 Available)</p>
+        <p>McLaren 720S GT3 Evo (1/2 Available)</p>
+        <p>Mercedes-AMG GT3 Evo (0/2 Available)</p>
+        <p>Porsche 911 GT3-R 992 (1/2 Available)</p>
 
-            The cars have also been performance balanced to attempt to level the playing field, and they are limited to
-            the following:
+        <p>Every car has a slick and rain tire which may be used at any time during races, and car setups may be changed
+            in their entirety at any time during a race weekend, including between qualifying and the race. If a team
+            wishes to run a qualifying and race setup that are entirely different, they may do so.</p>
 
-            - **Audi R8 LMS GT3 evo II**
-              - 0/2 Available
-            - **BMW M6 GT3**
-              - 2/2 Available
-            - **Corvette C8.R GT3**
-              - 2/2 Available
-            - **Ferrari 296 GT3**
-              - 1/2 Available
-            - **Honda NSX GT3 evo II**
-              - 1/1 Available
-            - **Lamborghini Huracan GT3 evo II**
-              - 1/2 Available
-            - **Lexus RC F GT3**
-              - 1/2 Available
-            - **McLaren 720S GT3 evo**
-              - 1/2 Available
-            - **Mercedes-AMG GT3 Evo**
-              - 0/2 Available
-            - **Porsche 911 GT3-R (992)**
-              - 1/2 Available
+        <h3>Tracks</h3>
 
-            Every car has a slick and rain tire which may be used at any time during races, and car setups may be changed in their
-            entirety at any time during a race weekend, including between qualifying and the race. If a team wishes to run a
-            qualifying and race setup that are entirely different, they may do so.
-            
-            ## Tracks
+        <p>1st March</p>
+        <p>- Race 1, Circuit Gilles Villeneuve<br>- Race 2, Daytona Road Course</p>
 
-            - **1st March**
-              - Race 1 - Circuit Gilles Villeneuve
-              - Race 2 - Daytona Road Course (night)
-            - **5th April**
-              - Race 3 - Sydney Motorsport Park - Gardener GP Circuit
-              - Race 4 - Highlands GT
-            - **10th May**
-              - Race 5 - Mugello
-              - Race 6 - Imola
-            - **7th June**
-              - Race 7- Laguna Seca
-              - Race 8 - Road Atlanta 2022 (late evening)
-            - **5th July**
-              - Endurance 1 - Nurburgring - GP (GT)
-            - **2nd August**
-              - Race 9 - Circuit Zolder
-              - Race 10 - Oulton Park - International 2022
-            - **6th September**
-              - Race 11 - Mid-Field Raceway - Forward Layout
-              - Race 12 - Deep Forest Raceway
-            - **4th October**
-              - Race 13 - Kyalami 2016
-              - Race 14 - Algarve International Circuit
-            - **1st November**
-              - Endurance 2 - Bathurst 12 hour 2024 layout
+        <p>5th April</p>
+        <p>- Race 3, Sydney Motorsport Park<br>- Race 4, Highlands GT</p>
 
-            ## Race Day Schedule 
+        <p>10th May</p>
+        <p>- Race 5, Mugello<br>- Race 6, Imola</p>
 
-            Sprint race days will consist of 2 1 hour races. The days will run as follows:
+        <p>7th June</p>
+        <p>- Race 7, Laguna Seca<br>- Race 8, Road Atlanta</p>
 
-              - **09:00 am** - Track 1 Practice
-              - **10:30 am** - Track 1 Qualifying
-              - **11:00 am** - Track 1 Race
-              - **12:00 pm** - Lunch
-              - **12:30 pm** - Track 2 Practice
-              - **02:00 pm** - Track 2 Race
-              
-              And Endurance Events will run as follows
-              
-              - **09:00 am** - Practice 1
-              - **11:00 am** - Qualifying
-              - **11:45 am** - Lunch
-              - **01:00 pm** - Race
-              
-            For points, a driver winning the race will receive 25 points, and qualifying 1st will give 1 point, this will be managed
-            by the AEC website.
-        </md-block>
+        <p>5th July</p>
+        <p>- Endurance 1, Nurburgring GP</p>
 
-        <md-block id="par3">
-            # Latest Livestream
+        <p>2nd August</p>
+        <p>- Race 9, Circuit Zolder<br>Race 10, Oulton Park</p>
 
-            ## Race 2 - Daytona Road Course
+        <p>6th September</p>
+        <p>- Race 11, Grand Valley Speedway<br>- Race 12, Deep Forest Raceway</p>
 
-            <p class="middleme">
-                <iframe width="100%" height="480" src="https://www.youtube.com/embed/LEnvXghu0yE?start=897"
-                    title="2025 GT3 AEC Championship - Race 2 - Daytona Road Course" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </p>
-            
-        </md-block>
+        <p>4th October</p>
+        <p>- Race 13, Kyalami<br>- Race 14, Algarve International Raceway</p>
 
-        <md-block id="par4">
-            # Rules and Regulations
+        <p>1st November</p>
+        <p>Endurance 2, Bathurst 2 hour</p>
 
-            ## Pit Stops
-            
-            Mandatory pit stop times will be returning as they worked in 2024. When service has finished on your car, you must wait
-            a designated time before you can set off again. This time is based on the gap to 1st from the previous race and has
-            effectively bunched up the field for multiple years now. Endurance races double the pit stop time, and everyone gets a
-            flat 5 minutes added to their time to give everyone a half race distance break to have a drink etc. Not serving your
-            mandatory pit time may lead to disqualification or a readjustment of your finishing position based on the time you did
-            not serve.
-            
-            Pit stops limiters are now also in effect, the game will no longer reduce your speed as you enter pit lane, you must
-            slow down yourself and use a pit limiter (this can be bound in the content manager controls settings). You will receive
-            a pit box lock penalty for 30 seconds if you speed in the pit lane.
-            
-            ## Race Starts
-            
-            Race starts will be manual rolling starts. The grid will roll out and perform a formation lap, then use their pit
-            limiters to start the race. The rolling start will be staggered, 2 by 2 to try and reduce accidents into the 1st corner.
-            Being in the Discord call is very important for the rolling start as an incident on the formation lap will lead to an
-            aborted start and an extra lap where cars may need to pit to fix their cars and rejoin in their starting position. Any
-            start incidents will be addressed at the end of the race and be punished with a pit time penalty for the next race.
-            
-            ## Starting positions
-            
-            Starting positions are based on 2 factors, qualifying and the results of the last race.
-            
-            Sprint race days are divided up into 2 races, the 1st has a qualifying session where drivers post the fastest times they
-            can. The fastest car gets 1 point in this session. The race is then a reverse grid based on qualifying. To prevent any
-            gaming of this system, times must be within 105% of the fastest time. If drivers are outside of that time, they must
-            start from the back of the grid from fastest to slowest.
-            
-            As for the 2nd race for a sprint day, cars are ordered in a reverse grid from the previous race results.
-            
-            This means that the formation lap is used to re-organise cars in their proper grid positions, hence the need to be in
-            the Discord call at this time.
-            
-            ## Blue Flags
-            
-            Our rules on blue flags differ from most. All cars are outfitted to be able to flash their headlights. If this is done,
-            a car being waved blue flags MUST move over to let them go, though if they do not flash their lights, the car being
-            shown blue flags may fight the overtake. A driver may also request this over Discord instead of flashing their lights,
-            which is also fine. This is to let cars that are fighting for a position pass easily, but let's cars who aren't worried
-            about race position the ability to enjoy racing wheel to wheel with someone.
-            
-            During Qualifying, a faster car always has right of way. If a car is catching you, you must move to the side to let them
-            past, even if you are on a fast lap. And slipstreaming is strictly prohibited during qualifying to not give teams unfair
-            advantages.
-            
-            ## Racing Etiquette
-            
-            We have 2 main rules when racing. 1 is to always leave a car room, and 2 is to always avoid being at fault for an
-            accident.
-            
-            For rule 1, if you are racing another opponent and you are on the inside OR outside, you must leave room for the other
-            car before, during and after the corner. Once someones front wheel is past the rear wheel of another car, they are
-            considered along side and they now have right of way on that side of the track. You may never force another car off the
-            track or intentionally make contact with them. We want to encourage clean and fun racing between everyone. Failure to do
-            this, depending on the result of the race, can lead to disqualification, time penalties or for intentional bad action, a
-            request to leave the championship. This may seem harsh but we really want a fun racing above all else.
-            
-            Rule 2 is for following cars. If you outbreak yourself, it is your job to throw your car off the track to avoid contact
-            with the car ahead. If the contact effects the end of the race, you may be disqualified or given time penalties. If the
-            contact was minor, a driver will receive a 1 place grid penalty for the next race.
-            
-            ## Incidents between 2 or more drivers
-            
-            If an incident is not covered in the racing etiquette section, the drivers involved in the incident will watch the
-            replay after the race and collectively decide who is at fault and a punishment. If an agreement cannot be reached,
-            another driver not involved and with no bias will make the decision after hearing out both cases. These incidents cannot
-            effect anything retroactively, the finished race is set in stone, but it can effect later races.
-            
-            ## Corner Cutting
-            
-            This year we will be trailing a corner cutting system that gives a driver 10 warnings before issuing a 30 second time
-            penalty for leaving the track and gaining an advantage. Also Qualifying laps will be deleted if a driver leaves the
-            track on that lap.
+        <h3>Race Day Schedule</h3>
+        <p>Sprint race says will consist of 2, 1 hour races. The days will run as follows:</p>
 
-        </md-block>
+        <p>09:00 am - Track 1 Practice<br>10:30 am - Track 1 Qualifying<br>11:00 am - Track 1 Race<br>12:00 pm -
+            Lunch<br>12:30 pm - Track 2 Practice<br>02:00 pm - Track 2 Race</p>
 
-        <md-block>
-            ©2025 Algebuckina Design PTY LTD
-        </md-block>
-    </main>
+        <p>And endurance events will run as follows:</p>
 
-    <script>
+        <p>09:00 am - Practice 1<br>11:00 am - Qualifying<br>11:45 am - Lunch<br>01:00 pm - Race</p>
 
-        // This is the code that finds the top id called "par#" which is the paragraphs in the main div. It then uses that info to change the colour of the nav2 element
-        function findTopElement() {
-            // Select all elements in the document that have an ID attribute
-            const elements = document.querySelectorAll('[id]');
+        <p>For points, a driver winning the race will receive 25 points, and qualifying 1st will give 1 point, this will
+            be managed by the AEC website. </p>
 
-            // Initialize variables to keep track of the topmost element and its position
-            let topElement = null;
-            let minTop = Infinity;
+        <hr>
 
-            // Iterate over each element with an ID
-            elements.forEach(el => {
-                // Check if the element's ID contains the substring 'par'
-                if (el.id.includes('par')) {
-                    // Get the position of the element relative to the viewport
-                    const rect = el.getBoundingClientRect();
+        <h3 class="middleme">Rules and Regulations</h3>
 
-                    // Check if this element is within the viewport and closer to the top than the current topmost element
-                    if (rect.top >= 0 && rect.top < minTop) {
-                        // Update the minimum top position
-                        minTop = rect.top;
-                        // Update the topmost element
-                        topElement = el;
-                    }
-                }
-            });
+        <hr>
 
-            // removes the a from par# to turn it into pr# which refers to the ID of the nav2 items
-            let topEl = topElement.id;
-            let newTopEl = topEl.replace(/a/g, '');
+        <h3>Pit Stops</h3>
 
-            // changes all the pr# ID's to light gray before the top on on the user space is changed to active
-            //need to change 9 to how many (pr#) ID's there are
-            for (let i = 1; i <= 9; i++) {
-                let element = document.getElementById(`pr${i}`);
-                if (element) {
-                    element.style.color = "lightgray";
-                    element.style.borderLeftColor = "lightgray";
-                }
-            }
+        <p>Mandatory pit stop times will be returning as they worked in 2024. When service has finished on your car, you
+            must wait a designated time before you can set off again. This time is based on the gap to 1st from the
+            previous race and has effectively bunched up the field for multiple years now. Endurance races double the
+            pit stop time, and everyone gets a flat 5 minutes added to their time to give everyone a half race distance
+            break to have a drink etc. Not serving your mandatory pit time may lead to disqualification or a
+            readjustment of your finishing position based on the time you did not serve.</p>
 
-            // changes the colour of the active navbar2 ID
-            document.getElementById(newTopEl).style["color"] = "#231f20";
-            document.getElementById(newTopEl).style["border-left-color"] = "#231f20";
-        }
+        <p>Pit stops limiters are now also in effect, the game will no longer reduce your speed as you enter pit lane,
+            you must slow down yourself and use a pit limiter (this can be bound in the content manager controls
+            settings). You will receive a pit box lock penalty for 30 seconds if you speed in the pit lane.</p>
 
-        // runs the find top element function every time the user scrolls
-        window.addEventListener('scroll', findTopElement);
+        <h3>Race Starts </h3>
 
+        <p>Race starts will be manual rolling starts. The grid will roll out and perform a formation lap, then use their pit limiters to start the race. The rolling start will be staggered, 2 by 2 to try and reduce accidents into the 1st corner. Being in the Discord call is very important for the rolling start as an incident on the formation lap will lead to an aborted start and an extra lap where cars may need to pit to fix their cars and rejoin in their starting position. Any start incidents will be addressed at the end of the race and be punished with a pit time penalty for the next race.</p>
 
-        // this makes sure the side nav bar is the same height as all the main content.
-        function adjustNavHeight() {
-            // Get the height of the <main> element
-            const mainElement = document.getElementById('main');
-            const mainHeight = mainElement.offsetHeight - 20;
+        <h3>Starting Positions</h3>
 
-            // Apply that height to the <nav> element
-            const navElement = document.getElementById('nav');
-            navElement.style.height = mainHeight + 'px'; // Set the height in pixels
-        }
+        <p>Starting positions are based on 2 factors, qualifying and the results of the last race.</p>
 
-        // Initial adjustment
-        adjustNavHeight();
+        <p>Sprint race days are divided up into 2 races, the 1st has a qualifying session where drivers post the fastest times they can. The fastest car gets 1 point in this session. The race is then a reverse grid based on qualifying. To prevent any gaming of this system, times must be within 105% of the fastest time. If drivers are outside of that time, they must start from the back of the grid from fastest to slowest.</p>
 
-        // Create a MutationObserver to watch for changes in the <main> element
-        const mainElement = document.getElementById('main');
-        const observer = new MutationObserver(adjustNavHeight);
+        <p>As for the 2nd race for a sprint day, cars are ordered in a reverse grid from the previous race results.</p>
 
-        // Configure the observer to watch for child changes and attribute changes
-        observer.observe(mainElement, {
-            childList: true, // Watch for changes to child elements
-            subtree: true, // Watch for changes in all descendants
-            attributes: true // Watch for changes to attributes
-        });
+        <p>This means that the formation lap is used to re-organise cars in their proper grid positions, hence the need to be in the Discord call at this time.</p>
 
-        // Also adjust height on window resize
-        window.addEventListener('resize', adjustNavHeight);
-    </script>
+        <h3>Blue Flags</h3>
 
-    <script>
-        function formatDate(date) {
-            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-            return date.toLocaleDateString('en-GB', options);
-        }
+        <p>Our rules on blue flags differ from most. All cars are outfitted to be able to flash their headlights. If this is done, a car being waved blue flags MUST move over to let them go, though if they do not flash their lights, the car being shown blue flags may fight the overtake. A driver may also request this over Discord instead of flashing their lights, which is also fine. This is to let cars that are fighting for a position pass easily, but let’s cars who aren’t worried about race position the ability to enjoy racing wheel to wheel with someone.</p>
 
-        const currentDate = new Date();
-        document.getElementById('current-date').innerText = formatDate(currentDate);
-    </script>
+        <p>During Qualifying, a faster car always has right of way. If a car is catching you, you must move to the side to let them past, even if you are on a fast lap. And slipstreaming is strictly prohibited during qualifying to not give teams unfair advantages.</p>
 
-    <script>
-      function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-      }
+        <h3>Racing Etiquette</h3>
 
-      function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-      }
-    </script>
+        <p>We have 2 main rules when racing. 1 is to always leave a car room, and 2 is to always avoid being at fault for an accident.</p>
+
+        <p>For rule 1, if you are racing another opponent and you are on the inside OR outside, you must leave room for the other car before, during and after the corner. Once someones front wheel is past the rear wheel of another car, they are considered along side and they now have right of way on that side of the track. You may never force another car off the track or intentionally make contact with them. We want to encourage clean and fun racing between everyone. Failure to do this, depending on the result of the race, can lead to disqualification, time penalties or for intentional bad action, a request to leave the championship. This may seem harsh but we really want a fun racing above all else.</p>
+
+        <p>Rule 2 is for following cars. If you outbreak yourself, it is your job to throw your car off the track to avoid contact with the car ahead. If the contact effects the end of the race, you may be disqualified or given time penalties. If the contact was minor, a driver will receive a 1 place grid penalty for the next race.</p>
+
+        <h3>Incidents between 2 or more drivers</h3>
+
+        <p>If an incident is not covered in the racing etiquette section, the drivers involved in the incident will watch the replay after the race and collectively decide who is at fault and a punishment. If an agreement cannot be reached, another driver not involved and with no bias will make the decision after hearing out both cases. These incidents cannot effect anything retroactively, the finished race is set in stone, but it can effect later races.</p>
+
+        <h3>Corner Cutting</h3>
+
+        <p>This year we will be trailing a corner cutting system that gives a driver 10 warnings before issuing a 30 second time penalty for leaving the track and gaining an advantage. Also Qualifying laps will be deleted if a driver leaves the track on that lap.</p>
+
+        <hr>
+
+        <footer>
+            <p class="middleme">&copy; 2025 Algebuckina Design PTY LTD. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
+<script>
+    function openNav() {
+        document.getElementById("nav2").style.height = "100%";
+        document.getElementById("cross").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("nav2").style.height = "0px";
+        document.getElementById("cross").style.display = "none";
+    }
+</script>
 
 </html>

@@ -7,300 +7,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algebuckina Design</title>
     <meta name="description" content="ALGEBUCKINA">
-    <meta name="keywords" content="ALGEBUCKINA">
     <meta name="author" content="Bradley Turner">
     <meta property="og:image" content="./favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="shotcut icon" type="image/ico" href="./favicon.ico">
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">
 </head>
 
 <body>
 
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./index.html">HOME</a>
-        <a href="./products-services.html">PRODUCTS</a>
-        <a href="./contact.html">CONTACT</a>
-        <a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a>
-        <a href="https://github.com/algebuckina">GITHUB</a>
-        <a href="https://www.etsy.com/au/shop/AlgebuckinaDesign">ETSY STORE</a>
+    <div id="loading">
+        <p><span style="color: #B6C48A;">algebuckinaDesign@SydneyNSW</span>:~$ <span id="neofetch"></span> </p>
+        <pre id="compInfo">
+            <div style="color: #4C8C4A;" class="neofetchICO">
+
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</span>▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</span>▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</span>▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</span>▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒</span>       ▓▓▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒</span>     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒</span>   ▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒</span> ▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒▒▒</span>▓▓▓▓▓▓▓▓▓    ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒▒▒</span>▓▓▓▓▓▓▓▓▓      ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        <span style="color: #B6C48A;">▒▒</span>▓▓▓▓▓▓▓▓▓        ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                        ▓▓▓▓▓▓▓▓▓          ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                      ▓▓▓▓▓▓▓▓▓            ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                    ▓▓▓▓▓▓▓▓▓▓             ▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>
+                   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒</span>
+                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒▒▒▒▒</span>▓▓▓▓▓▓▓<span style="color: #B6C48A;">▒▒</span>
+            </div>
+            <div class="neofetch">
+                <span style="color: #B6C48A;">algebuckinaDesign@SydneyNSW</span>
+                ---------------------------
+                <span style="color: #F4E1B2; font-weight: bold;">OS</span>: <script>document.write(navigator.platform)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Host</span>: Github Pages
+                <span style="color: #F4E1B2; font-weight: bold;">Browser</span>: <script>document.write(navigator.appName)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Browser Version:</span> <script>document.write(navigator.appVersion)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Date</span>: <script>document.write(new Date().toLocaleString())</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Language</span>: <script>document.write(navigator.language)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Resolution</span>: <script>document.write(screen.width + " x " + screen.height)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Colour Depth</span>: <script>document.write(screen.colorDepth)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Extensions</span>: <script>document.write(navigator.plugins.length)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">Theme</span>: Dark
+                <span style="color: #F4E1B2; font-weight: bold;">Terminal</span>: algeterminalina
+                <span style="color: #F4E1B2; font-weight: bold;">CPU Cores</span>: <script>document.write(navigator.hardwareConcurrency)</script>
+                <span style="color: #F4E1B2; font-weight: bold;">GPU</span>: llvmpipe (LLVM 12.0.0, 256x256)
+                <span style="color: #F4E1B2; font-weight: bold;">Memory</span>: 47.5KiB / 7866MiB
+                <span style="color: #F4E1B2; font-weight: bold;">Coupon Code</span>: thistooktoolongtocode
+            </div>
+    </pre>
+        <br>
+        <p class="middleme">Loading Algebuckina Design...</p>
+        <p id="prompt1" style="display: none;"><span style="color: #B6C48A;">algebuckinaDesign@SydneyNSW</span>:~$ <span id="prompt2"></span></p>
     </div>
 
-    <div class="nav3">
-        <button class="openbtn" onclick="openNav()">☰</button>
+    <div class="content" id="content">
+
+        
+
+        <footer>
+            <p class="middleme">&copy; 2025 Algebuckina Design PTY LTD. All rights reserved.</p>
+        </footer>
     </div>
-
-    <header>
-        <div class="headerTitle">
-            <div class="headerLogo">
-                <img src="images/logo.png">
-            </div>
-            <div class="headerMain">
-                <p id="current-date"></p>
-                <h1>Algebuckina Design</h1>
-                <h4 class="subtitle">Environmentally Conscious Design</h4>
-            </div>
-            <div class="headerLinks">
-                <p><a href="https://www.instagram.com/algebuckina/">INSTAGRAM</a></p>
-                <p><a href="https://github.com/algebuckina">GITHUB</a></p>
-                <p><a href="https://www.etsy.com/au/shop/AlgebuckinaDesign">ETSY STORE</a></p>
-            </div>
-        </div>
-
-        <nav>
-            <div class="navButtons"><a href="./index.html">HOME</a></div>
-            <div class="navButtons"><a href="./products-services.html">PRODUCTS</a></div>
-            <div class="navButtons"><a href="./community.html">COMMUNITY</a></div>
-            <div class="navButtons"><a href="./contact.html">CONTACT</a></div>
-        </nav>
-    </header>
-
-    <div class="nav2Container" id="nav">
-        <div class="nav2">
-            <a href="#par1" id="pr1">
-                About Us
-            </a>
-            <a href="#par2" id="pr2">
-                Services
-            </a>
-            <a href="#par3" id="pr3">
-                Timeline
-            </a>
-            <a href="#par4" id="pr4">
-                Designers
-            </a>
-            <a href="#par5" id="pr5">
-                Links
-            </a>
-        </div>
-    </div>
-
-    <main id="main">
-        <md-block id="par1">
-            # About Us
-
-            Algebuckina Design is a small design and manufacturing company based in Western Sydney, Australia. Founded
-            by Bradley Turner in 2021, our mission is to create innovative products that reduce waste and promote
-            environmental responsibility.
-
-            ### Our Vision
-
-            We're committed to making a positive impact on the environment by designing and manufacturing products that
-            are not only functional but also sustainable. Our goal is to reduce the amount of plastic used in household
-            electronic peripherals and promote open-source design principles.
-
-            ### What we offer
-
-            We also offer a range of services to support our product development, including CAD design and drafting,
-            rapid prototyping and small-scale production runs, high-quality rendering and visualization, UX/UI design
-            and interactive 3D experiences and virtual reality environments. Whether you need help bringing a product to
-            life, visualizing a design, or creating an immersive experience, we're here to help.
-
-            ### What we are working on in house
-
-            We're currently working on two exciting projects. Our first project is a wooden keyboard that combines a
-            premium typing experience with a sustainable design. Our second project is an open-source car head unit that
-            aims to keep older cars up to date with the latest technology while reducing electronic waste and promoting
-            freedom from proprietary ecosystems.
-
-            If you're interested in learning more about our products or services, please don't hesitate to contact us.
-            We'd love to hear from you and explore how we can work together to create something amazing.
-
-        </md-block>
-
-        <md-block id="par2">
-            # Services
-
-            ### CAD Services
-
-            We offer a range of CAD services. Our team of experienced designers can help you create accurate and
-            detailed 3D models of your products or designs.
-
-            ### Prototyping Services
-
-            We provide rapid prototyping and small-scale production run services. Our team can help you create
-            functional prototypes of your products or designs.
-
-            ### Render Services
-
-            We create high-quality renders of your products or designs, Our team can help you visualise your products or
-            designs in a realistic and detailed way.
-
-            ### Interaction Services
-
-            We create immersive and interactive experiences. Our team can help you bring your products or designs to
-            life in a fully immersive and interactive way.
-
-            ### UX/UI Services
-
-            We provide UX/UI design services. Our team can help you create user-friendly and intuitive interfaces for
-            your products or designs.
-
-            If you're interested in learning more about our services, please click here to learn more about what we
-            offer.
-
-        </md-block>
-
-        <md-block id="par3" class="Timeline">
-            # Timeline
-
-            |         |         |
-            |--------:| --------|
-            | **November 2021** - | Founded |
-            | **January 2022** - | St Matthew's Uniting Church Website Published |
-            | **February 2023** - | ADRS Begins |
-            | **March 2023** - | SWGEmu Mod Manager Released |
-            | **November 2024** - | ADRS renamed to AEC |
-            | **January 2025** - | Launching of Design Services |
-
-        </md-block>
-
-        <md-block id="par4">
-            # Designers
-
-            ## Bradley Turner
-            ### Virtual Environment Designer and Founder
-
-            ## Daina Bai
-            ### Lead & UX/UI Designer
-
-            ## Aqeel
-            ### CAD Designer
-
-            ## Brendan Huckle
-            ### Rendering Designer
-
-            ## Stephen Turner
-            ### Manufacturing Technician
-        </md-block>
-
-        <md-block id="par5" class="middleme">
-            # Links
-
-            <img src="images/logo.png" alt="logo" width="200px">
-
-            # Algebuckina Design
-
-            ## [Website](www.algebuckina-design.au) | [Contact Us](./contact-us) | [Github](https://github.com/algebuckina) | [Instagram](https://www.instagram.com/algebuckina/) | [Linkedin](https://www.linkedin.com/company/algebuckina-design/) | [Twitch](https://www.twitch.tv/algebuckina_design) | [Twitter](https://twitter.com/algebuckina) | [Youtube](https://www.youtube.com/channel/UCp-P5ys675ju4mfHJCrfGfw)
-
-        </md-block>
-
-        <md-block>
-            ©2025 Algebuckina Design PTY LTD
-        </md-block>
-    </main>
 
     <script>
 
-        // This is the code that finds the top id called "par#" which is the paragraphs in the main div. It then uses that info to change the colour of the nav2 element
-        function findTopElement() {
-            // Select all elements in the document that have an ID attribute
-            const elements = document.querySelectorAll('[id]');
-
-            // Initialize variables to keep track of the topmost element and its position
-            let topElement = null;
-            let minTop = Infinity;
-
-            // Iterate over each element with an ID
-            elements.forEach(el => {
-                // Check if the element's ID contains the substring 'par'
-                if (el.id.includes('par')) {
-                    // Get the position of the element relative to the viewport
-                    const rect = el.getBoundingClientRect();
-
-                    // Check if this element is within the viewport and closer to the top than the current topmost element
-                    if (rect.top >= 0 && rect.top < minTop) {
-                        // Update the minimum top position
-                        minTop = rect.top;
-                        // Update the topmost element
-                        topElement = el;
-                    }
+        function typeText(text, delay, getId, callback) {
+            let index = 0;
+            const intervalId = setInterval(() => {
+                if (index < text.length) {
+                    document.getElementById(getId).innerHTML += text[index];
+                    index++;
+                } else {
+                    clearInterval(intervalId);
+                    callback();
                 }
-            });
-
-            // removes the a from par# to turn it into pr# which refers to the ID of the nav2 items
-            let topEl = topElement.id;
-            let newTopEl = topEl.replace(/a/g, '');
-
-            // changes all the pr# ID's to light gray before the top on on the user space is changed to active
-            //need to change 9 to how many (pr#) ID's there are
-            for (let i = 1; i <= 9; i++) {
-                let element = document.getElementById(`pr${i}`);
-                if (element) {
-                    element.style.color = "lightgray";
-                    element.style.borderLeftColor = "lightgray";
-                }
-            }
-
-            // changes the colour of the active navbar2 ID
-            document.getElementById(newTopEl).style["color"] = "#231f20";
-            document.getElementById(newTopEl).style["border-left-color"] = "#231f20";
+            }, delay);
         }
 
-        // runs the find top element function every time the user scrolls
-        window.addEventListener('scroll', findTopElement);
-
-
-        // this makes sure the side nav bar is the same height as all the main content.
-        function adjustNavHeight() {
-            // Get the height of the <main> element
-            const mainElement = document.getElementById('main');
-            const mainHeight = mainElement.offsetHeight - 20;
-
-            // Apply that height to the <nav> element
-            const navElement = document.getElementById('nav');
-            navElement.style.height = mainHeight + 'px'; // Set the height in pixels
+        function afterTypingFinished() {
+            document.getElementById('compInfo').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('prompt1').style.display = 'block';
+                typeText("./home.html", 150, 'prompt2', loadWebpage);
+            }, 2000)
         }
 
-        // Initial adjustment
-        adjustNavHeight();
-
-        // Create a MutationObserver to watch for changes in the <main> element
-        const mainElement = document.getElementById('main');
-        const observer = new MutationObserver(adjustNavHeight);
-
-        // Configure the observer to watch for child changes and attribute changes
-        observer.observe(mainElement, {
-            childList: true, // Watch for changes to child elements
-            subtree: true, // Watch for changes in all descendants
-            attributes: true // Watch for changes to attributes
+        document.addEventListener('DOMContentLoaded', function () {
+            const textToType1 = "neofetch";
+            typeText(textToType1, 150, 'neofetch', afterTypingFinished);
         });
 
-        // Also adjust height on window resize
-        window.addEventListener('resize', adjustNavHeight);
+
+        // Simulate loading effect
+        function loadWebpage() {
+            setTimeout(() => {
+                window.open('./home.html', '_self' );
+            }, 1000); // Change the duration as needed (3000ms = 3 seconds)
+        };
+
     </script>
 
-    <script>
-        function formatDate(date) {
-            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-            return date.toLocaleDateString('en-GB', options);
-        }
-
-        const currentDate = new Date();
-        document.getElementById('current-date').innerText = formatDate(currentDate);
-    </script>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-    </script>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-    </script>
 </body>
 
+<script>
+    function openNav() {
+        document.getElementById("nav2").style.height = "100%";
+        document.getElementById("cross").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("nav2").style.height = "0px";
+        document.getElementById("cross").style.display = "none";
+    }
+</script>
 
 </html>
