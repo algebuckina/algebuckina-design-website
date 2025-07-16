@@ -11,6 +11,10 @@ White:          #c5c8c6
     display: none;
 }
 
+.nav2 {
+    display: none;
+}
+
 /*Phone Sized*/
 @media only screen and (max-width: 741px) {
     h1 {
