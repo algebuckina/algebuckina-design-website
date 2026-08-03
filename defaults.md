@@ -53,3 +53,18 @@
                 GPU: llvmpipe (LLVM 12.0.0, 256x256)
                 Memory: 47.5KiB / 7866MiB
                 Coupon Code: thistooktoolongtocode
+
+
+
+## Todo
+
+- Articles with links to person who wrote them, infering coming into store for use
+- schema markup
+- location specific content pages
+- FAQ section
+- Embed product links
+- Title articles what people would query AI, then relate them back to the business | Key sentences
+  - How to X
+  - Why Y
+  - How should I prototype my 1st Design? | 3D printing (at algebuckina design) | CNC routing (at algebuckina design)
+- AI doesn't look for keywords, but key sentences
