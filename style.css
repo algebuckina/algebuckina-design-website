@@ -246,7 +246,7 @@ nav a:hover {
 .dropbtn {
   background-color: #1e1e1e;
   color: #B6C48A;
-  padding: 16px;
+  padding: 5px;
   font-family: 'Ubuntu Mono', monospace;
   width: 100%;
   border-radius: 5px 5px 0px 0px;
@@ -269,9 +269,9 @@ nav a:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-  width: 18%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
+  width: 15%;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -292,6 +292,8 @@ nav a:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Change color of dropdown links on hover */

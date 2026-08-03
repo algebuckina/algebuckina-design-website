@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebuckina Design | Info Base</title>
+    <meta name="description" content="At Algebuckina Design, we offer a range of services to help you bring your product ideas to life. We're committed to being open and transparent about our process, and we want to make sure you understand what you're getting.">
+    <meta name="author" content="Bradley Turner">
+    <meta name="keywords" content="Algebuckina Design, Sydney design studio, Sydney 3D printing, sustainable design, eco-friendly products, Parramatta Region design, community events, gaming nights, assetto corsa championships, 3D printing services">
+    <meta property="og:image" content="./favicon.png">
+    <link rel="shotcut icon" type="image/ico" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/site.webmanifest">
+</head>
+
+<div class="nav2" id="nav2">
+    <button class="cross" id="cross" onclick="closeNav()">x</button>
+    <br>
+    <a href="./home.html"><h2>Home</h2></a>
+    <a href="./index.html"><h3>- neofetch</h3></a>
+
+    <a href="./services.html"><h2>Services</h2></a>
+    <a href="./services.html#prototyping"><h3>- Prototyping</h3></a>
+    <a href="./services.html#manufacturing"><h3>- Manufacturing</h3></a>
+    <a href="./services.html#CAD"><h3>- CAD</h3></a>
+
+    <a href="./products.html"><h2>Products</h2></a>
+    <a href="./products.html#cablecombs"><h3>- Cable Combs</h3></a>
+    <a href="./products.html#simrace"><h3>- Sim Racing</h3></a>
+
+    <a href="./community.html"><h2>Community</h2></a>
+    <a href="./community.html#ADGT"><h3>- ADGT</h3></a>
+    <a href="./community.html#mmm"><h3>- Mid Month Motorsport</h3></a>
+    <a href="./community.html#bts"><h3>- Behind the Scenes</h3></a>
+
+    <a href="./infobase.html"><h2>Info Base</h2></a>
+
+    <a href="./contact.html"><h2>Contact Us</h2></a>
+</div>
+
+<button class="hamburger" onclick="openNav()">≡</button>
+
+<body>
+    <header style="display: flex; align-items: center;">
+        <img class="logo" src="images/logo.png" height="150px" alt="Logo of the company AD, featuring a modern design with bold typography and a sleek color scheme.">
+        <h1 style="vertical-align: middle;"><span style="color: #4C8C4A;">ALGEBUCKINA</span> <span
+                style="color: #B6C48A;">DESIGN</span></h1>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./home.html'">Home</button>
+            <div class="dropdown-content">
+                <a href="./index.html">neofetch</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./services.html'">Services</button>
+            <div class="dropdown-content">
+                <a href="./services.html#prototyping">Prototyping</a>
+                <a href="./services.html#manufacturing">Manufacturing</a>
+                <a href="./services.html#CAD">CAD</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./products.html'">Products</button>
+            <div class="dropdown-content">
+                <a href="./products.html#cablecombs">Cable Combs</a>
+                <a href="./products.html#simrace">Sim Racing</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="currentPage" onclick="location.href='./community.html'">Community</button>
+            <div class="dropdown-content">
+                <a href="./community.html#ADGT">ADGT</a>
+                <a href="./community.html#mmm">Mid Month Motorsport</a>
+                <a href="./community.html#bts">Behind the Scenes</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./infobase.html'">Info Base</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='./contact.html'">Contact</button>
+        </div>
+    </nav>
+
+    <div class="content" id="content">
+
+        <footer>
+            <p class="middleme">&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> Algebuckina Design PTY LTD. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+<script>
+    function openNav() {
+        document.getElementById("nav2").style.height = "100%";
+        document.getElementById("cross").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("nav2").style.height = "0px";
+        document.getElementById("cross").style.display = "none";
+    }
+</script>
+
+</html>
