@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://algebuckina-design.au/sitemap.xml
